@@ -46,9 +46,18 @@ func delByIdsService(ids string) (e commons.EgoResult) {
 	return
 }
 
-//删除商品
+//上架商品
 func inStockByIdsService(ids string) (e commons.EgoResult) {
 	count := updateStatusByIdsDao(strings.Split(ids, ","), 1)
+	if count > 0 {
+		e.Status = 200
+	}
+	return
+}
+
+//下架商品
+func outStockByIdsService(ids string) (e commons.EgoResult) {
+	count := updateStatusByIdsDao(strings.Split(ids, ","), 2)
 	if count > 0 {
 		e.Status = 200
 	}
