@@ -1,0 +1,22 @@
+package item
+
+type Tbitem struct {
+	Id  int
+	Title string
+	SellPoint string
+	Price int
+	Num int
+	Barcode string
+	Image string
+	Cid int
+	Status int8
+	Created string
+	Updated string
+}
+
+
+//给页面使用，实现商品类目
+type TbItemChild struct {
+	Tbitem
+	CategoryName string
+}

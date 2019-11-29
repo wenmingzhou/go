@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>添加</title>
+</head>
+<script type="text/javascript" src="/static/js/jquery.js"></script>
+<body>
+标题:<input type="text" id="title" value="测"><br>
+作者:<input type="text" id="author" value="测1"><br>
+内容:<input type="text" id="content" value="测2"><br>
+点击数:<input type="text" id="hits" value="1"><br>
+
+<button onclick="add()">添加</button>
+</body>
+<script>
+    function add() {
+        var title = $("#title").val();
+        var author = $("#author").val();
+        var content = $("#content").val();
+        var hits = $("#hits").val();
+
+        $.post("/api/article/add/",
+            {
+                title: title, author: author,
+                content: content, hits: hits,
+            }, function (resp) {
+            }, 'json')
+    }
+
+</script>
+</html>

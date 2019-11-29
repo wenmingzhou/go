@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>list</title>
+</head>
+<body>
+<div>
+    <a href="/add">添加</a>
+    <ul id="ctn">
+        <li><b>标题</b><span>[标题]</span><b>作者</b><span>[作者]</span><button onclick="del(id)">删除</button></li>
+    </ul>
+</div>
+<script type="text/javascript" src="/static/js/template-web.js"></script>
+<script type="text/javascript" src="/static/js/jquery.js"></script>
+
+<script id="test" type="text/html">
+        {{each list value i}}
+        <li>索引 {{i + 1}}<b>标题</b><span>[{{value.title}}]</span><b>作者</b><span>[{{value.author}}]</span><button onclick="del({{value.id}})">删除</button></li>
+        {{/each}}
+</script>
+
+<script>
+    function init() {
+        $.get("/api/list/data",{},function (resp) {
+            var data ={
+                list:resp.data
+            }
+            if(resp.code==200){
+                var html = template('test', data);
+                document.getElementById('ctn').innerHTML = html;
+            }else{
+                alert(resp.msg)
+            }
+
+        },'json')
+    }
+    init()
+
+</script>
+
+</body>
+</html>
