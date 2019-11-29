@@ -3,6 +3,7 @@ package item
 import (
 	"ego/src/commons"
 	"ego/src/item/cat"
+	"strings"
 )
 
 func showItemService(page, rows int) (e *commons.Datagrid) {
@@ -34,4 +35,13 @@ func showItemService(page, rows int) (e *commons.Datagrid) {
 		return
 	}
 	return nil
+}
+
+//删除商品
+func delByIdsService(ids string) (e commons.EgoResult) {
+	count := updateStatusByIdsDao(strings.Split(ids, ","), 3)
+	if count > 0 {
+		e.Status = 200
+	}
+	return
 }

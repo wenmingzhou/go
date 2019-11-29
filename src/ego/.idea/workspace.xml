@@ -3,7 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="558b9445-6d12-4c28-b8d4-362b16384dc4" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/item/TbItemController.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/item/TbItemController.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/item/TbItemDao.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/item/TbItemDao.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/item/TbItemService.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/item/TbItemService.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/showItemList.html" beforeDir="false" afterPath="$PROJECT_DIR$/view/showItemList.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../github.com/BurntSushi/toml" beforeDir="false" afterPath="$PROJECT_DIR$/../github.com/BurntSushi/toml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../github.com/CloudyKit/jet" beforeDir="false" afterPath="$PROJECT_DIR$/../github.com/CloudyKit/jet" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../github.com/Joker/jade" beforeDir="false" afterPath="$PROJECT_DIR$/../github.com/Joker/jade" afterDir="false" />
@@ -158,6 +161,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="3" />
-    <option name="LAST_COMMIT_MESSAGE" value="3" />
+    <MESSAGE value="分类展示" />
+    <option name="LAST_COMMIT_MESSAGE" value="分类展示" />
   </component>
 </project>

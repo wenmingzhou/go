@@ -78,6 +78,11 @@
                     ,{field:'Cid', title: '分类'}
                     ,{field:'Status', width:137, title: '状态', sort: true}
                     ,{field:'Created', width:200, title: '创建时间', sort: true}
+                    ,{field: 'operate', title: '操作', width:150, templet:function(d)
+                        {
+                            var html = '';html += '&nbsp;&nbsp;<span class="layui-table-link deleteData" style="cursor: pointer;" data-rowid="'+d.Id+'">删除</span>';return html;
+                        }
+                    }
                 ]]
             });
         });
@@ -86,11 +91,27 @@
       layui.use(['laydate','form'], function(){
         var laydate = layui.laydate;
         var  form = layui.form;
-
+        var  $ = layui.$;
+        $('body').on('click', '.deleteData',function(){
+              var id = $(this).data('rowid');
+            $.ajax({
+                url: "/item/delete",
+                type: 'get',
+                data: 'id='+id,
+                success: function (res) {
+                    if (res.Status == '200') {
+                        alert("删除成功")
+                        return false;
+                    } else {
+                        alert("删除失败！")
+                        return false;
+                    }
+                },
+            });
+          });
 
         // 监听全选
         form.on('checkbox(checkall)', function(data){
-
           if(data.elem.checked){
             $('tbody input').prop('checked',true);
           }else{
