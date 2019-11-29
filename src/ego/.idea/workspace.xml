@@ -1,7 +1,38 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="558b9445-6d12-4c28-b8d4-362b16384dc4" name="Default Changelist" comment="" />
+    <list default="true" id="558b9445-6d12-4c28-b8d4-362b16384dc4" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../../.idea/go.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/item/TbItemService.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/item/TbItemService.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../github.com/BurntSushi/toml" beforeDir="false" afterPath="$PROJECT_DIR$/../github.com/BurntSushi/toml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../github.com/CloudyKit/jet" beforeDir="false" afterPath="$PROJECT_DIR$/../github.com/CloudyKit/jet" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../github.com/Joker/jade" beforeDir="false" afterPath="$PROJECT_DIR$/../github.com/Joker/jade" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../github.com/Shopify/goreferrer" beforeDir="false" afterPath="$PROJECT_DIR$/../github.com/Shopify/goreferrer" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../github.com/aymerick/raymond" beforeDir="false" afterPath="$PROJECT_DIR$/../github.com/aymerick/raymond" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../github.com/chris-ramon/douceur" beforeDir="false" afterPath="$PROJECT_DIR$/../github.com/chris-ramon/douceur" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../github.com/eknkc/amber" beforeDir="false" afterPath="$PROJECT_DIR$/../github.com/eknkc/amber" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../github.com/fatih/structs" beforeDir="false" afterPath="$PROJECT_DIR$/../github.com/fatih/structs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../github.com/flosch/pongo2" beforeDir="false" afterPath="$PROJECT_DIR$/../github.com/flosch/pongo2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../github.com/gorilla/css" beforeDir="false" afterPath="$PROJECT_DIR$/../github.com/gorilla/css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../github.com/iris-contrib/blackfriday" beforeDir="false" afterPath="$PROJECT_DIR$/../github.com/iris-contrib/blackfriday" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../github.com/iris-contrib/go.uuid" beforeDir="false" afterPath="$PROJECT_DIR$/../github.com/iris-contrib/go.uuid" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../github.com/iris-contrib/schema" beforeDir="false" afterPath="$PROJECT_DIR$/../github.com/iris-contrib/schema" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../github.com/json-iterator/go" beforeDir="false" afterPath="$PROJECT_DIR$/../github.com/json-iterator/go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../github.com/juju/errors" beforeDir="false" afterPath="$PROJECT_DIR$/../github.com/juju/errors" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../github.com/kataras/golog" beforeDir="false" afterPath="$PROJECT_DIR$/../github.com/kataras/golog" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../github.com/kataras/iris" beforeDir="false" afterPath="$PROJECT_DIR$/../github.com/kataras/iris" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../github.com/kataras/pio" beforeDir="false" afterPath="$PROJECT_DIR$/../github.com/kataras/pio" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../github.com/klauspost/compress" beforeDir="false" afterPath="$PROJECT_DIR$/../github.com/klauspost/compress" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../github.com/klauspost/cpuid" beforeDir="false" afterPath="$PROJECT_DIR$/../github.com/klauspost/cpuid" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../github.com/microcosm-cc/bluemonday" beforeDir="false" afterPath="$PROJECT_DIR$/../github.com/microcosm-cc/bluemonday" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../github.com/modern-go/concurrent" beforeDir="false" afterPath="$PROJECT_DIR$/../github.com/modern-go/concurrent" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../github.com/modern-go/reflect2" beforeDir="false" afterPath="$PROJECT_DIR$/../github.com/modern-go/reflect2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../github.com/ryanuber/columnize" beforeDir="false" afterPath="$PROJECT_DIR$/../github.com/ryanuber/columnize" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../github.com/shurcooL/sanitized_anchor_name" beforeDir="false" afterPath="$PROJECT_DIR$/../github.com/shurcooL/sanitized_anchor_name" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gopkg.in/yaml.v2" beforeDir="false" afterPath="$PROJECT_DIR$/../gopkg.in/yaml.v2" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,10 +56,15 @@
     </findStrings>
   </component>
   <component name="GOROOT" path="C:\Go" />
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
   <component name="ProjectId" id="1UGqXGKw3OHHGgnOgYWErBNCqzU" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
     <property name="DefaultGoTemplateProperty" value="Go File" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="configurable.Global.GOPATH.is.expanded" value="true" />
     <property name="configurable.Module.GOPATH.is.expanded" value="true" />
@@ -109,5 +145,16 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>

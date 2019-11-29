@@ -27,6 +27,7 @@ func showItemService(page, rows int) (e *commons.Datagrid) {
 			itemChild.Title = ts[i].Title
 			itemChild.CategoryName = cat.ShowCatByIdService(ts[i].Cid).Name
 			itemChildren = append(itemChildren, itemChild)
+
 		}
 		e = new(commons.Datagrid)
 		e.Data = itemChildren
