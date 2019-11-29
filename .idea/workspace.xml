@@ -1,0 +1,844 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="1fc3f39b-041b-4c89-be38-8c19e0303dae" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/src/github.com/BurntSushi/toml/cmd/toml-test-decoder/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/BurntSushi/toml/cmd/toml-test-decoder/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/BurntSushi/toml/cmd/toml-test-encoder/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/BurntSushi/toml/cmd/toml-test-encoder/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/BurntSushi/toml/cmd/tomlv/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/BurntSushi/toml/cmd/tomlv/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/BurntSushi/toml/decode.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/BurntSushi/toml/decode.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/BurntSushi/toml/decode_meta.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/BurntSushi/toml/decode_meta.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/BurntSushi/toml/decode_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/BurntSushi/toml/decode_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/BurntSushi/toml/doc.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/BurntSushi/toml/doc.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/BurntSushi/toml/encode.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/BurntSushi/toml/encode.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/BurntSushi/toml/encode_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/BurntSushi/toml/encode_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/BurntSushi/toml/encoding_types.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/BurntSushi/toml/encoding_types.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/BurntSushi/toml/encoding_types_1.1.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/BurntSushi/toml/encoding_types_1.1.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/BurntSushi/toml/lex.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/BurntSushi/toml/lex.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/BurntSushi/toml/parse.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/BurntSushi/toml/parse.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/BurntSushi/toml/type_check.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/BurntSushi/toml/type_check.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/BurntSushi/toml/type_fields.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/BurntSushi/toml/type_fields.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/CloudyKit/jet/constructors.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/CloudyKit/jet/constructors.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/CloudyKit/jet/default.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/CloudyKit/jet/default.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/CloudyKit/jet/eval.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/CloudyKit/jet/eval.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/CloudyKit/jet/eval_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/CloudyKit/jet/eval_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/CloudyKit/jet/examples/asset_packaging/assets/templates/templates.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/CloudyKit/jet/examples/asset_packaging/assets/templates/templates.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/CloudyKit/jet/examples/asset_packaging/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/CloudyKit/jet/examples/asset_packaging/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/CloudyKit/jet/examples/todos/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/CloudyKit/jet/examples/todos/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/CloudyKit/jet/func.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/CloudyKit/jet/func.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/CloudyKit/jet/jettest/test.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/CloudyKit/jet/jettest/test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/CloudyKit/jet/lex.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/CloudyKit/jet/lex.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/CloudyKit/jet/lex_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/CloudyKit/jet/lex_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/CloudyKit/jet/loader.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/CloudyKit/jet/loader.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/CloudyKit/jet/loaders/httpfs/httpfs_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/CloudyKit/jet/loaders/httpfs/httpfs_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/CloudyKit/jet/loaders/httpfs/loader.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/CloudyKit/jet/loaders/httpfs/loader.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/CloudyKit/jet/loaders/multi/multi.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/CloudyKit/jet/loaders/multi/multi.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/CloudyKit/jet/loaders/multi/multi_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/CloudyKit/jet/loaders/multi/multi_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/CloudyKit/jet/node.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/CloudyKit/jet/node.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/CloudyKit/jet/parse.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/CloudyKit/jet/parse.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/CloudyKit/jet/parse_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/CloudyKit/jet/parse_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/CloudyKit/jet/template.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/CloudyKit/jet/template.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/CloudyKit/jet/utils/visitor.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/CloudyKit/jet/utils/visitor.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/CloudyKit/jet/utils/visitor_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/CloudyKit/jet/utils/visitor_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/CloudyKit/jet/yield/yield.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/CloudyKit/jet/yield/yield.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/Joker/jade/cmd/jade/config.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/Joker/jade/cmd/jade/config.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/Joker/jade/cmd/jade/go_ast_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/Joker/jade/cmd/jade/go_ast_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/Joker/jade/cmd/jade/go_ast_type.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/Joker/jade/cmd/jade/go_ast_type.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/Joker/jade/cmd/jade/go_ast_unbk.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/Joker/jade/cmd/jade/go_ast_unbk.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/Joker/jade/cmd/jade/go_ast_wstr.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/Joker/jade/cmd/jade/go_ast_wstr.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/Joker/jade/cmd/jade/jade.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/Joker/jade/cmd/jade/jade.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/Joker/jade/cmd/jade/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/Joker/jade/cmd/jade/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/Joker/jade/config.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/Joker/jade/config.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/Joker/jade/config_string.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/Joker/jade/config_string.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/Joker/jade/example/index.jade.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/Joker/jade/example/index.jade.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/Joker/jade/example/jade.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/Joker/jade/example/jade.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/Joker/jade/example/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/Joker/jade/example/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/Joker/jade/example/v1.0/actions/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/Joker/jade/example/v1.0/actions/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/Joker/jade/example/v1.0/jade.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/Joker/jade/example/v1.0/jade.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/Joker/jade/example/v1.0/jade_extends/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/Joker/jade/example/v1.0/jade_extends/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/Joker/jade/example/v1.0/jade_include/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/Joker/jade/example/v1.0/jade_include/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/Joker/jade/jade_lex.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/Joker/jade/jade_lex.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/Joker/jade/jade_node.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/Joker/jade/jade_node.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/Joker/jade/jade_parse.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/Joker/jade/jade_parse.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/Joker/jade/jade_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/Joker/jade/jade_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/Joker/jade/lex.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/Joker/jade/lex.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/Joker/jade/node.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/Joker/jade/node.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/Joker/jade/parse.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/Joker/jade/parse.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/Joker/jade/template.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/Joker/jade/template.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/Shopify/goreferrer/default_rules.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/Shopify/goreferrer/default_rules.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/Shopify/goreferrer/referrer.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/Shopify/goreferrer/referrer.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/Shopify/goreferrer/rich_url.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/Shopify/goreferrer/rich_url.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/Shopify/goreferrer/rules.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/Shopify/goreferrer/rules.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/Shopify/goreferrer/rules_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/Shopify/goreferrer/rules_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/aymerick/raymond/ast/node.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/aymerick/raymond/ast/node.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/aymerick/raymond/ast/print.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/aymerick/raymond/ast/print.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/aymerick/raymond/base_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/aymerick/raymond/base_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/aymerick/raymond/benchmark_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/aymerick/raymond/benchmark_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/aymerick/raymond/data_frame.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/aymerick/raymond/data_frame.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/aymerick/raymond/escape.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/aymerick/raymond/escape.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/aymerick/raymond/escape_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/aymerick/raymond/escape_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/aymerick/raymond/eval.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/aymerick/raymond/eval.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/aymerick/raymond/eval_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/aymerick/raymond/eval_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/aymerick/raymond/handlebars/base_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/aymerick/raymond/handlebars/base_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/aymerick/raymond/handlebars/basic_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/aymerick/raymond/handlebars/basic_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/aymerick/raymond/handlebars/blocks_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/aymerick/raymond/handlebars/blocks_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/aymerick/raymond/handlebars/builtins_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/aymerick/raymond/handlebars/builtins_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/aymerick/raymond/handlebars/data_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/aymerick/raymond/handlebars/data_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/aymerick/raymond/handlebars/doc.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/aymerick/raymond/handlebars/doc.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/aymerick/raymond/handlebars/helpers_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/aymerick/raymond/handlebars/helpers_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/aymerick/raymond/handlebars/partials_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/aymerick/raymond/handlebars/partials_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/aymerick/raymond/handlebars/subexpressions_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/aymerick/raymond/handlebars/subexpressions_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/aymerick/raymond/handlebars/whitespace_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/aymerick/raymond/handlebars/whitespace_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/aymerick/raymond/helper.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/aymerick/raymond/helper.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/aymerick/raymond/helper_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/aymerick/raymond/helper_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/aymerick/raymond/lexer/lexer.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/aymerick/raymond/lexer/lexer.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/aymerick/raymond/lexer/lexer_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/aymerick/raymond/lexer/lexer_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/aymerick/raymond/lexer/token.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/aymerick/raymond/lexer/token.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/aymerick/raymond/mustache_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/aymerick/raymond/mustache_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/aymerick/raymond/parser/parser.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/aymerick/raymond/parser/parser.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/aymerick/raymond/parser/parser_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/aymerick/raymond/parser/parser_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/aymerick/raymond/parser/whitespace.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/aymerick/raymond/parser/whitespace.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/aymerick/raymond/partial.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/aymerick/raymond/partial.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/aymerick/raymond/raymond.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/aymerick/raymond/raymond.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/aymerick/raymond/raymond_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/aymerick/raymond/raymond_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/aymerick/raymond/string.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/aymerick/raymond/string.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/aymerick/raymond/string_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/aymerick/raymond/string_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/aymerick/raymond/template.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/aymerick/raymond/template.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/aymerick/raymond/template_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/aymerick/raymond/template_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/aymerick/raymond/utils.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/aymerick/raymond/utils.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/aymerick/raymond/utils_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/aymerick/raymond/utils_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/chris-ramon/douceur/css/declaration.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/chris-ramon/douceur/css/declaration.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/chris-ramon/douceur/css/rule.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/chris-ramon/douceur/css/rule.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/chris-ramon/douceur/css/stylesheet.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/chris-ramon/douceur/css/stylesheet.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/chris-ramon/douceur/douceur.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/chris-ramon/douceur/douceur.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/chris-ramon/douceur/inliner/element.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/chris-ramon/douceur/inliner/element.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/chris-ramon/douceur/inliner/inliner.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/chris-ramon/douceur/inliner/inliner.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/chris-ramon/douceur/inliner/inliner_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/chris-ramon/douceur/inliner/inliner_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/chris-ramon/douceur/inliner/style_declaration.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/chris-ramon/douceur/inliner/style_declaration.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/chris-ramon/douceur/inliner/style_rule.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/chris-ramon/douceur/inliner/style_rule.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/chris-ramon/douceur/inliner/style_rule_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/chris-ramon/douceur/inliner/style_rule_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/chris-ramon/douceur/parser/parser.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/chris-ramon/douceur/parser/parser.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/chris-ramon/douceur/parser/parser_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/chris-ramon/douceur/parser/parser_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/eknkc/amber/amber_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/eknkc/amber/amber_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/eknkc/amber/amberc/cli.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/eknkc/amber/amberc/cli.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/eknkc/amber/compiler.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/eknkc/amber/compiler.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/eknkc/amber/doc.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/eknkc/amber/doc.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/eknkc/amber/parser/nodes.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/eknkc/amber/parser/nodes.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/eknkc/amber/parser/parser.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/eknkc/amber/parser/parser.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/eknkc/amber/parser/scanner.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/eknkc/amber/parser/scanner.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/eknkc/amber/runtime.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/eknkc/amber/runtime.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/fatih/structs/field.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/fatih/structs/field.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/fatih/structs/field_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/fatih/structs/field_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/fatih/structs/structs.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/fatih/structs/structs.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/fatih/structs/structs_example_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/fatih/structs/structs_example_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/fatih/structs/structs_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/fatih/structs/structs_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/fatih/structs/tags.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/fatih/structs/tags.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/fatih/structs/tags_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/fatih/structs/tags_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/flosch/pongo2/nodes_html.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/flosch/pongo2/nodes_html.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/gorilla/css/scanner/doc.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/gorilla/css/scanner/doc.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/gorilla/css/scanner/scanner.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/gorilla/css/scanner/scanner.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/gorilla/css/scanner/scanner_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/gorilla/css/scanner/scanner_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/iris-contrib/blackfriday/block.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/iris-contrib/blackfriday/block.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/iris-contrib/blackfriday/esc.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/iris-contrib/blackfriday/esc.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/iris-contrib/blackfriday/html.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/iris-contrib/blackfriday/html.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/iris-contrib/blackfriday/inline.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/iris-contrib/blackfriday/inline.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/iris-contrib/blackfriday/markdown.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/iris-contrib/blackfriday/markdown.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/iris-contrib/blackfriday/node.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/iris-contrib/blackfriday/node.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/iris-contrib/blackfriday/smartypants.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/iris-contrib/blackfriday/smartypants.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/iris-contrib/go.uuid/codec.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/iris-contrib/go.uuid/codec.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/iris-contrib/go.uuid/codec_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/iris-contrib/go.uuid/codec_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/iris-contrib/go.uuid/generator.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/iris-contrib/go.uuid/generator.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/iris-contrib/go.uuid/generator_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/iris-contrib/go.uuid/generator_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/iris-contrib/go.uuid/sql.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/iris-contrib/go.uuid/sql.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/iris-contrib/go.uuid/sql_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/iris-contrib/go.uuid/sql_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/iris-contrib/go.uuid/uuid.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/iris-contrib/go.uuid/uuid.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/iris-contrib/go.uuid/uuid_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/iris-contrib/go.uuid/uuid_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/iris-contrib/schema/cache.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/iris-contrib/schema/cache.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/iris-contrib/schema/converter.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/iris-contrib/schema/converter.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/iris-contrib/schema/decoder.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/iris-contrib/schema/decoder.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/iris-contrib/schema/decoder_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/iris-contrib/schema/decoder_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/iris-contrib/schema/encoder.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/iris-contrib/schema/encoder.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/iris-contrib/schema/encoder_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/iris-contrib/schema/encoder_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/iris-contrib/schema/schema.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/iris-contrib/schema/schema.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/json-iterator/go/adapter.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/json-iterator/go/adapter.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/json-iterator/go/any.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/json-iterator/go/any.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/json-iterator/go/any_array.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/json-iterator/go/any_array.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/json-iterator/go/any_bool.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/json-iterator/go/any_bool.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/json-iterator/go/any_float.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/json-iterator/go/any_float.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/json-iterator/go/any_int32.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/json-iterator/go/any_int32.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/json-iterator/go/any_int64.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/json-iterator/go/any_int64.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/json-iterator/go/any_invalid.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/json-iterator/go/any_invalid.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/json-iterator/go/any_nil.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/json-iterator/go/any_nil.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/json-iterator/go/any_number.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/json-iterator/go/any_number.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/json-iterator/go/any_object.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/json-iterator/go/any_object.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/json-iterator/go/any_str.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/json-iterator/go/any_str.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/json-iterator/go/any_tests/jsoniter_any_array_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/json-iterator/go/any_tests/jsoniter_any_array_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/json-iterator/go/any_tests/jsoniter_any_bool_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/json-iterator/go/any_tests/jsoniter_any_bool_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/json-iterator/go/any_tests/jsoniter_any_float_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/json-iterator/go/any_tests/jsoniter_any_float_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/json-iterator/go/any_tests/jsoniter_any_int_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/json-iterator/go/any_tests/jsoniter_any_int_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/json-iterator/go/any_tests/jsoniter_any_map_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/json-iterator/go/any_tests/jsoniter_any_map_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/json-iterator/go/any_tests/jsoniter_any_null_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/json-iterator/go/any_tests/jsoniter_any_null_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/json-iterator/go/any_tests/jsoniter_any_object_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/json-iterator/go/any_tests/jsoniter_any_object_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/json-iterator/go/any_tests/jsoniter_any_string_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/json-iterator/go/any_tests/jsoniter_any_string_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/json-iterator/go/any_tests/jsoniter_must_be_valid_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/json-iterator/go/any_tests/jsoniter_must_be_valid_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/json-iterator/go/any_tests/jsoniter_wrap_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/json-iterator/go/any_tests/jsoniter_wrap_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/json-iterator/go/any_uint32.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/json-iterator/go/any_uint32.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/json-iterator/go/any_uint64.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/json-iterator/go/any_uint64.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/json-iterator/go/api_tests/config_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/json-iterator/go/api_tests/config_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/json-iterator/go/api_tests/decoder_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/json-iterator/go/api_tests/decoder_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/json-iterator/go/api_tests/encoder_18_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/json-iterator/go/api_tests/encoder_18_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/json-iterator/go/api_tests/encoder_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/json-iterator/go/api_tests/encoder_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/json-iterator/go/api_tests/marshal_indent_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/json-iterator/go/api_tests/marshal_indent_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/json-iterator/go/api_tests/marshal_json_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/json-iterator/go/api_tests/marshal_json_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/json-iterator/go/benchmarks/encode_string_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/json-iterator/go/benchmarks/encode_string_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/json-iterator/go/benchmarks/jsoniter_large_file_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/json-iterator/go/benchmarks/jsoniter_large_file_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/json-iterator/go/config.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/json-iterator/go/config.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/json-iterator/go/example_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/json-iterator/go/example_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/json-iterator/go/extension_tests/decoder_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/json-iterator/go/extension_tests/decoder_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/json-iterator/go/extension_tests/extension_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/json-iterator/go/extension_tests/extension_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/json-iterator/go/extra/binary_as_string_codec.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/json-iterator/go/extra/binary_as_string_codec.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/json-iterator/go/extra/binary_as_string_codec_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/json-iterator/go/extra/binary_as_string_codec_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/json-iterator/go/extra/fuzzy_decoder.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/json-iterator/go/extra/fuzzy_decoder.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/json-iterator/go/extra/fuzzy_decoder_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/json-iterator/go/extra/fuzzy_decoder_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/json-iterator/go/extra/naming_strategy.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/json-iterator/go/extra/naming_strategy.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/json-iterator/go/extra/naming_strategy_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/json-iterator/go/extra/naming_strategy_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/json-iterator/go/extra/privat_fields.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/json-iterator/go/extra/privat_fields.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/json-iterator/go/extra/private_fields_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/json-iterator/go/extra/private_fields_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/json-iterator/go/extra/time_as_int64_codec.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/json-iterator/go/extra/time_as_int64_codec.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/json-iterator/go/extra/time_as_int64_codec_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/json-iterator/go/extra/time_as_int64_codec_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/json-iterator/go/iter.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/json-iterator/go/iter.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/json-iterator/go/iter_array.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/json-iterator/go/iter_array.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/json-iterator/go/iter_float.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/json-iterator/go/iter_float.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/json-iterator/go/iter_int.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/json-iterator/go/iter_int.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/json-iterator/go/iter_object.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/json-iterator/go/iter_object.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/json-iterator/go/iter_skip.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/json-iterator/go/iter_skip.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/json-iterator/go/iter_skip_sloppy.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/json-iterator/go/iter_skip_sloppy.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/json-iterator/go/iter_skip_sloppy_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/json-iterator/go/iter_skip_sloppy_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/json-iterator/go/iter_skip_strict.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/json-iterator/go/iter_skip_strict.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/json-iterator/go/iter_str.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/json-iterator/go/iter_str.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/json-iterator/go/jsoniter.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/json-iterator/go/jsoniter.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/json-iterator/go/misc_tests/jsoniter_array_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/json-iterator/go/misc_tests/jsoniter_array_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/json-iterator/go/misc_tests/jsoniter_bool_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/json-iterator/go/misc_tests/jsoniter_bool_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/json-iterator/go/misc_tests/jsoniter_float_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/json-iterator/go/misc_tests/jsoniter_float_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/json-iterator/go/misc_tests/jsoniter_int_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/json-iterator/go/misc_tests/jsoniter_int_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/json-iterator/go/misc_tests/jsoniter_interface_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/json-iterator/go/misc_tests/jsoniter_interface_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/json-iterator/go/misc_tests/jsoniter_iterator_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/json-iterator/go/misc_tests/jsoniter_iterator_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/json-iterator/go/misc_tests/jsoniter_map_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/json-iterator/go/misc_tests/jsoniter_map_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/json-iterator/go/misc_tests/jsoniter_nested_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/json-iterator/go/misc_tests/jsoniter_nested_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/json-iterator/go/misc_tests/jsoniter_null_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/json-iterator/go/misc_tests/jsoniter_null_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/json-iterator/go/misc_tests/jsoniter_object_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/json-iterator/go/misc_tests/jsoniter_object_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/json-iterator/go/misc_tests/jsoniter_raw_message_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/json-iterator/go/misc_tests/jsoniter_raw_message_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/json-iterator/go/pool.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/json-iterator/go/pool.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/json-iterator/go/reflect.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/json-iterator/go/reflect.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/json-iterator/go/reflect_array.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/json-iterator/go/reflect_array.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/json-iterator/go/reflect_dynamic.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/json-iterator/go/reflect_dynamic.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/json-iterator/go/reflect_extension.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/json-iterator/go/reflect_extension.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/json-iterator/go/reflect_json_number.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/json-iterator/go/reflect_json_number.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/json-iterator/go/reflect_json_raw_message.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/json-iterator/go/reflect_json_raw_message.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/json-iterator/go/reflect_map.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/json-iterator/go/reflect_map.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/json-iterator/go/reflect_marshaler.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/json-iterator/go/reflect_marshaler.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/json-iterator/go/reflect_native.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/json-iterator/go/reflect_native.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/json-iterator/go/reflect_optional.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/json-iterator/go/reflect_optional.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/json-iterator/go/reflect_slice.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/json-iterator/go/reflect_slice.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/json-iterator/go/reflect_struct_decoder.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/json-iterator/go/reflect_struct_decoder.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/json-iterator/go/reflect_struct_encoder.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/json-iterator/go/reflect_struct_encoder.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/json-iterator/go/skip_tests/array_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/json-iterator/go/skip_tests/array_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/json-iterator/go/skip_tests/float64_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/json-iterator/go/skip_tests/float64_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/json-iterator/go/skip_tests/jsoniter_skip_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/json-iterator/go/skip_tests/jsoniter_skip_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/json-iterator/go/skip_tests/skip_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/json-iterator/go/skip_tests/skip_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/json-iterator/go/skip_tests/string_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/json-iterator/go/skip_tests/string_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/json-iterator/go/skip_tests/struct_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/json-iterator/go/skip_tests/struct_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/json-iterator/go/stream.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/json-iterator/go/stream.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/json-iterator/go/stream_float.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/json-iterator/go/stream_float.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/json-iterator/go/stream_int.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/json-iterator/go/stream_int.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/json-iterator/go/stream_str.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/json-iterator/go/stream_str.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/json-iterator/go/stream_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/json-iterator/go/stream_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/json-iterator/go/type_tests/array_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/json-iterator/go/type_tests/array_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/json-iterator/go/type_tests/builtin_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/json-iterator/go/type_tests/builtin_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/json-iterator/go/type_tests/map_key_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/json-iterator/go/type_tests/map_key_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/json-iterator/go/type_tests/map_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/json-iterator/go/type_tests/map_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/json-iterator/go/type_tests/marshaler_string_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/json-iterator/go/type_tests/marshaler_string_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/json-iterator/go/type_tests/marshaler_struct_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/json-iterator/go/type_tests/marshaler_struct_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/json-iterator/go/type_tests/slice_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/json-iterator/go/type_tests/slice_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/json-iterator/go/type_tests/struct_embedded_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/json-iterator/go/type_tests/struct_embedded_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/json-iterator/go/type_tests/struct_field_case_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/json-iterator/go/type_tests/struct_field_case_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/json-iterator/go/type_tests/struct_tags_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/json-iterator/go/type_tests/struct_tags_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/json-iterator/go/type_tests/struct_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/json-iterator/go/type_tests/struct_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/json-iterator/go/type_tests/text_marshaler_string_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/json-iterator/go/type_tests/text_marshaler_string_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/json-iterator/go/type_tests/text_marshaler_struct_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/json-iterator/go/type_tests/text_marshaler_struct_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/json-iterator/go/type_tests/type_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/json-iterator/go/type_tests/type_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/json-iterator/go/value_tests/array_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/json-iterator/go/value_tests/array_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/json-iterator/go/value_tests/bool_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/json-iterator/go/value_tests/bool_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/json-iterator/go/value_tests/eface_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/json-iterator/go/value_tests/eface_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/json-iterator/go/value_tests/error_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/json-iterator/go/value_tests/error_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/json-iterator/go/value_tests/float_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/json-iterator/go/value_tests/float_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/json-iterator/go/value_tests/iface_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/json-iterator/go/value_tests/iface_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/json-iterator/go/value_tests/int_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/json-iterator/go/value_tests/int_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/json-iterator/go/value_tests/invalid_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/json-iterator/go/value_tests/invalid_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/json-iterator/go/value_tests/map_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/json-iterator/go/value_tests/map_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/json-iterator/go/value_tests/marshaler_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/json-iterator/go/value_tests/marshaler_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/json-iterator/go/value_tests/number_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/json-iterator/go/value_tests/number_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/json-iterator/go/value_tests/ptr_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/json-iterator/go/value_tests/ptr_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/json-iterator/go/value_tests/raw_message_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/json-iterator/go/value_tests/raw_message_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/json-iterator/go/value_tests/slice_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/json-iterator/go/value_tests/slice_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/json-iterator/go/value_tests/string_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/json-iterator/go/value_tests/string_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/json-iterator/go/value_tests/struct_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/json-iterator/go/value_tests/struct_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/json-iterator/go/value_tests/value_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/json-iterator/go/value_tests/value_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/juju/errors/doc.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/juju/errors/doc.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/juju/errors/error.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/juju/errors/error.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/juju/errors/error_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/juju/errors/error_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/juju/errors/errortypes.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/juju/errors/errortypes.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/juju/errors/errortypes_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/juju/errors/errortypes_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/juju/errors/example_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/juju/errors/example_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/juju/errors/export_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/juju/errors/export_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/juju/errors/functions.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/juju/errors/functions.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/juju/errors/functions_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/juju/errors/functions_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/juju/errors/package_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/juju/errors/package_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/juju/errors/path.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/juju/errors/path.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/juju/errors/path_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/juju/errors/path_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/kataras/golog/doc.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/kataras/golog/doc.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/kataras/golog/golog.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/kataras/golog/golog.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/kataras/golog/integration.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/kataras/golog/integration.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/kataras/golog/level.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/kataras/golog/level.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/kataras/golog/log.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/kataras/golog/log.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/kataras/golog/logger.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/kataras/golog/logger.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/kataras/iris/cache/browser.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/kataras/iris/cache/browser.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/kataras/iris/cache/browser_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/kataras/iris/cache/browser_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/kataras/iris/cache/cache.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/kataras/iris/cache/cache.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/kataras/iris/cache/cache_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/kataras/iris/cache/cache_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/kataras/iris/cache/cfg/cfg.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/kataras/iris/cache/cfg/cfg.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/kataras/iris/cache/client/client.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/kataras/iris/cache/client/client.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/kataras/iris/cache/client/handler.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/kataras/iris/cache/client/handler.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/kataras/iris/cache/client/rule/chained.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/kataras/iris/cache/client/rule/chained.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/kataras/iris/cache/client/rule/conditional.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/kataras/iris/cache/client/rule/conditional.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/kataras/iris/cache/client/rule/header.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/kataras/iris/cache/client/rule/header.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/kataras/iris/cache/client/rule/not_satisfied.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/kataras/iris/cache/client/rule/not_satisfied.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/kataras/iris/cache/client/rule/rule.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/kataras/iris/cache/client/rule/rule.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/kataras/iris/cache/client/rule/satisfied.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/kataras/iris/cache/client/rule/satisfied.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/kataras/iris/cache/client/rule/validator.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/kataras/iris/cache/client/rule/validator.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/kataras/iris/cache/client/ruleset.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/kataras/iris/cache/client/ruleset.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/kataras/iris/cache/entry/entry.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/kataras/iris/cache/entry/entry.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/kataras/iris/cache/entry/response.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/kataras/iris/cache/entry/response.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/kataras/iris/cache/entry/util.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/kataras/iris/cache/entry/util.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/kataras/iris/cache/ruleset/ruleset.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/kataras/iris/cache/ruleset/ruleset.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/kataras/iris/cache/uri/uribuilder.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/kataras/iris/cache/uri/uribuilder.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/kataras/iris/configuration.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/kataras/iris/configuration.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/kataras/iris/configuration_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/kataras/iris/configuration_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/kataras/iris/context/application.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/kataras/iris/context/application.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/kataras/iris/context/configuration.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/kataras/iris/context/configuration.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/kataras/iris/context/context.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/kataras/iris/context/context.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/kataras/iris/context/gzip_response_writer.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/kataras/iris/context/gzip_response_writer.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/kataras/iris/context/handler.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/kataras/iris/context/handler.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/kataras/iris/context/pool.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/kataras/iris/context/pool.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/kataras/iris/context/problem.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/kataras/iris/context/problem.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/kataras/iris/context/request_params.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/kataras/iris/context/request_params.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/kataras/iris/context/response_recorder.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/kataras/iris/context/response_recorder.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/kataras/iris/context/response_writer.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/kataras/iris/context/response_writer.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/kataras/iris/context/route.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/kataras/iris/context/route.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/kataras/iris/context/transaction.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/kataras/iris/context/transaction.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/kataras/iris/core/errors/errors.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/kataras/iris/core/errors/errors.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/kataras/iris/core/errors/errors_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/kataras/iris/core/errors/errors_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/kataras/iris/core/errors/reporter.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/kataras/iris/core/errors/reporter.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/kataras/iris/core/errors/reporter_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/kataras/iris/core/errors/reporter_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/kataras/iris/core/handlerconv/from_std.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/kataras/iris/core/handlerconv/from_std.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/kataras/iris/core/handlerconv/from_std_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/kataras/iris/core/handlerconv/from_std_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/kataras/iris/core/host/interrupt.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/kataras/iris/core/host/interrupt.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/kataras/iris/core/host/proxy.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/kataras/iris/core/host/proxy.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/kataras/iris/core/host/proxy_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/kataras/iris/core/host/proxy_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/kataras/iris/core/host/supervisor.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/kataras/iris/core/host/supervisor.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/kataras/iris/core/host/supervisor_task_example_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/kataras/iris/core/host/supervisor_task_example_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/kataras/iris/core/host/supervisor_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/kataras/iris/core/host/supervisor_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/kataras/iris/core/host/task.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/kataras/iris/core/host/task.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/kataras/iris/core/memstore/gob.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/kataras/iris/core/memstore/gob.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/kataras/iris/core/memstore/memstore.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/kataras/iris/core/memstore/memstore.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/kataras/iris/core/memstore/memstore_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/kataras/iris/core/memstore/memstore_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/kataras/iris/core/netutil/addr.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/kataras/iris/core/netutil/addr.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/kataras/iris/core/netutil/addr_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/kataras/iris/core/netutil/addr_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/kataras/iris/core/netutil/client.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/kataras/iris/core/netutil/client.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/kataras/iris/core/netutil/server.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/kataras/iris/core/netutil/server.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/kataras/iris/core/netutil/tcp.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/kataras/iris/core/netutil/tcp.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/kataras/iris/core/router/api_builder.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/kataras/iris/core/router/api_builder.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/kataras/iris/core/router/api_builder_benchmark_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/kataras/iris/core/router/api_builder_benchmark_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/kataras/iris/core/router/deprecated.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/kataras/iris/core/router/deprecated.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/kataras/iris/core/router/deprecated_example_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/kataras/iris/core/router/deprecated_example_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/kataras/iris/core/router/fs.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/kataras/iris/core/router/fs.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/kataras/iris/core/router/handler.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/kataras/iris/core/router/handler.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/kataras/iris/core/router/handler_execution_rules.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/kataras/iris/core/router/handler_execution_rules.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/kataras/iris/core/router/handler_execution_rules_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/kataras/iris/core/router/handler_execution_rules_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/kataras/iris/core/router/mime.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/kataras/iris/core/router/mime.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/kataras/iris/core/router/party.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/kataras/iris/core/router/party.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/kataras/iris/core/router/path.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/kataras/iris/core/router/path.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/kataras/iris/core/router/path_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/kataras/iris/core/router/path_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/kataras/iris/core/router/route.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/kataras/iris/core/router/route.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/kataras/iris/core/router/route_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/kataras/iris/core/router/route_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/kataras/iris/core/router/router.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/kataras/iris/core/router/router.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/kataras/iris/core/router/router_handlers_order_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/kataras/iris/core/router/router_handlers_order_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/kataras/iris/core/router/router_subdomain_redirect_wrapper.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/kataras/iris/core/router/router_subdomain_redirect_wrapper.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/kataras/iris/core/router/router_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/kataras/iris/core/router/router_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/kataras/iris/core/router/router_wildcard_root_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/kataras/iris/core/router/router_wildcard_root_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/kataras/iris/core/router/status.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/kataras/iris/core/router/status.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/kataras/iris/core/router/status_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/kataras/iris/core/router/status_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/kataras/iris/core/router/trie.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/kataras/iris/core/router/trie.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/kataras/iris/doc.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/kataras/iris/doc.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/kataras/iris/go19.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/kataras/iris/go19.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/kataras/iris/hero/di.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/kataras/iris/hero/di.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/kataras/iris/hero/di/di.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/kataras/iris/hero/di/di.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/kataras/iris/hero/di/func.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/kataras/iris/hero/di/func.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/kataras/iris/hero/di/object.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/kataras/iris/hero/di/object.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/kataras/iris/hero/di/reflect.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/kataras/iris/hero/di/reflect.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/kataras/iris/hero/di/struct.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/kataras/iris/hero/di/struct.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/kataras/iris/hero/di/values.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/kataras/iris/hero/di/values.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/kataras/iris/hero/func_result.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/kataras/iris/hero/func_result.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/kataras/iris/hero/func_result_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/kataras/iris/hero/func_result_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/kataras/iris/hero/handler.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/kataras/iris/hero/handler.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/kataras/iris/hero/handler_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/kataras/iris/hero/handler_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/kataras/iris/hero/hero.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/kataras/iris/hero/hero.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/kataras/iris/hero/param.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/kataras/iris/hero/param.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/kataras/iris/hero/param_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/kataras/iris/hero/param_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/kataras/iris/hero/session.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/kataras/iris/hero/session.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/kataras/iris/httptest/httptest.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/kataras/iris/httptest/httptest.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/kataras/iris/httptest/httptest_go19.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/kataras/iris/httptest/httptest_go19.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/kataras/iris/httptest/netutils.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/kataras/iris/httptest/netutils.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/kataras/iris/httptest/status.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/kataras/iris/httptest/status.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/kataras/iris/iris.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/kataras/iris/iris.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/kataras/iris/macro/handler/handler.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/kataras/iris/macro/handler/handler.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/kataras/iris/macro/handler/handler_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/kataras/iris/macro/handler/handler_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/kataras/iris/macro/interpreter/ast/ast.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/kataras/iris/macro/interpreter/ast/ast.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/kataras/iris/macro/interpreter/lexer/lexer.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/kataras/iris/macro/interpreter/lexer/lexer.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/kataras/iris/macro/interpreter/lexer/lexer_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/kataras/iris/macro/interpreter/lexer/lexer_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/kataras/iris/macro/interpreter/parser/parser.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/kataras/iris/macro/interpreter/parser/parser.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/kataras/iris/macro/interpreter/parser/parser_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/kataras/iris/macro/interpreter/parser/parser_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/kataras/iris/macro/interpreter/token/token.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/kataras/iris/macro/interpreter/token/token.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/kataras/iris/macro/macro.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/kataras/iris/macro/macro.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/kataras/iris/macro/macro_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/kataras/iris/macro/macro_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/kataras/iris/macro/macros.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/kataras/iris/macro/macros.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/kataras/iris/macro/template.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/kataras/iris/macro/template.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/kataras/iris/middleware/basicauth/basicauth.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/kataras/iris/middleware/basicauth/basicauth.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/kataras/iris/middleware/basicauth/config.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/kataras/iris/middleware/basicauth/config.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/kataras/iris/middleware/i18n/config.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/kataras/iris/middleware/i18n/config.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/kataras/iris/middleware/i18n/i18n.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/kataras/iris/middleware/i18n/i18n.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/kataras/iris/middleware/logger/config.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/kataras/iris/middleware/logger/config.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/kataras/iris/middleware/logger/logger.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/kataras/iris/middleware/logger/logger.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/kataras/iris/middleware/methodoverride/methodoverride.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/kataras/iris/middleware/methodoverride/methodoverride.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/kataras/iris/middleware/methodoverride/methodoverride_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/kataras/iris/middleware/methodoverride/methodoverride_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/kataras/iris/middleware/pprof/pprof.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/kataras/iris/middleware/pprof/pprof.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/kataras/iris/middleware/recaptcha/recaptcha.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/kataras/iris/middleware/recaptcha/recaptcha.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/kataras/iris/middleware/recover/recover.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/kataras/iris/middleware/recover/recover.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/kataras/iris/mvc/controller.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/kataras/iris/mvc/controller.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/kataras/iris/mvc/controller_handle_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/kataras/iris/mvc/controller_handle_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/kataras/iris/mvc/controller_method_parser.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/kataras/iris/mvc/controller_method_parser.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/kataras/iris/mvc/controller_method_result_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/kataras/iris/mvc/controller_method_result_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/kataras/iris/mvc/controller_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/kataras/iris/mvc/controller_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/kataras/iris/mvc/go19.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/kataras/iris/mvc/go19.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/kataras/iris/mvc/mvc.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/kataras/iris/mvc/mvc.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/kataras/iris/mvc/param.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/kataras/iris/mvc/param.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/kataras/iris/mvc/reflect.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/kataras/iris/mvc/reflect.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/kataras/iris/sessions/config.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/kataras/iris/sessions/config.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/kataras/iris/sessions/cookie.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/kataras/iris/sessions/cookie.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/kataras/iris/sessions/database.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/kataras/iris/sessions/database.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/kataras/iris/sessions/lifetime.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/kataras/iris/sessions/lifetime.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/kataras/iris/sessions/provider.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/kataras/iris/sessions/provider.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/kataras/iris/sessions/session.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/kataras/iris/sessions/session.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/kataras/iris/sessions/sessiondb/badger/database.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/kataras/iris/sessions/sessiondb/badger/database.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/kataras/iris/sessions/sessiondb/boltdb/database.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/kataras/iris/sessions/sessiondb/boltdb/database.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/kataras/iris/sessions/sessiondb/redis/database.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/kataras/iris/sessions/sessiondb/redis/database.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/kataras/iris/sessions/sessiondb/redis/driver.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/kataras/iris/sessions/sessiondb/redis/driver.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/kataras/iris/sessions/sessiondb/redis/driver_radix.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/kataras/iris/sessions/sessiondb/redis/driver_radix.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/kataras/iris/sessions/sessiondb/redis/driver_redigo.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/kataras/iris/sessions/sessiondb/redis/driver_redigo.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/kataras/iris/sessions/sessions.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/kataras/iris/sessions/sessions.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/kataras/iris/sessions/sessions_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/kataras/iris/sessions/sessions_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/kataras/iris/sessions/transcoding.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/kataras/iris/sessions/transcoding.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/kataras/iris/typescript/config.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/kataras/iris/typescript/config.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/kataras/iris/typescript/editor/config.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/kataras/iris/typescript/editor/config.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/kataras/iris/typescript/editor/editor.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/kataras/iris/typescript/editor/editor.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/kataras/iris/typescript/npm/exec.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/kataras/iris/typescript/npm/exec.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/kataras/iris/typescript/npm/npm.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/kataras/iris/typescript/npm/npm.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/kataras/iris/typescript/typescript.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/kataras/iris/typescript/typescript.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/kataras/iris/versioning/deprecation.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/kataras/iris/versioning/deprecation.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/kataras/iris/versioning/deprecation_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/kataras/iris/versioning/deprecation_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/kataras/iris/versioning/group.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/kataras/iris/versioning/group.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/kataras/iris/versioning/version.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/kataras/iris/versioning/version.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/kataras/iris/versioning/version_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/kataras/iris/versioning/version_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/kataras/iris/versioning/versioning.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/kataras/iris/versioning/versioning.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/kataras/iris/versioning/versioning_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/kataras/iris/versioning/versioning_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/kataras/iris/view/amber.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/kataras/iris/view/amber.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/kataras/iris/view/django.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/kataras/iris/view/django.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/kataras/iris/view/engine.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/kataras/iris/view/engine.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/kataras/iris/view/funcs.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/kataras/iris/view/funcs.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/kataras/iris/view/handlebars.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/kataras/iris/view/handlebars.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/kataras/iris/view/html.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/kataras/iris/view/html.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/kataras/iris/view/jet.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/kataras/iris/view/jet.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/kataras/iris/view/pug.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/kataras/iris/view/pug.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/kataras/iris/view/view.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/kataras/iris/view/view.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/kataras/iris/websocket/websocket.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/kataras/iris/websocket/websocket.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/kataras/iris/websocket/websocket_go19.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/kataras/iris/websocket/websocket_go19.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/kataras/pio/adapter.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/kataras/pio/adapter.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/kataras/pio/color.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/kataras/pio/color.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/kataras/pio/hijacker.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/kataras/pio/hijacker.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/kataras/pio/marshaler.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/kataras/pio/marshaler.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/kataras/pio/nop.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/kataras/pio/nop.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/kataras/pio/pio.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/kataras/pio/pio.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/kataras/pio/printer.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/kataras/pio/printer.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/kataras/pio/registry.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/kataras/pio/registry.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/kataras/pio/terminal.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/kataras/pio/terminal.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/kataras/pio/terminal/terminal_appengine.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/kataras/pio/terminal/terminal_appengine.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/kataras/pio/terminal/terminal_bsd.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/kataras/pio/terminal/terminal_bsd.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/kataras/pio/terminal/terminal_linux.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/kataras/pio/terminal/terminal_linux.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/kataras/pio/terminal/terminal_notwindows.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/kataras/pio/terminal/terminal_notwindows.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/kataras/pio/terminal/terminal_solaris.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/kataras/pio/terminal/terminal_solaris.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/kataras/pio/terminal/terminal_windows.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/kataras/pio/terminal/terminal_windows.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/klauspost/compress/compressible.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/klauspost/compress/compressible.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/klauspost/compress/compressible_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/klauspost/compress/compressible_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/klauspost/compress/flate/asm_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/klauspost/compress/flate/asm_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/klauspost/compress/flate/crc32_amd64.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/klauspost/compress/flate/crc32_amd64.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/klauspost/compress/flate/crc32_noasm.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/klauspost/compress/flate/crc32_noasm.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/klauspost/compress/flate/deflate.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/klauspost/compress/flate/deflate.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/klauspost/compress/flate/deflate_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/klauspost/compress/flate/deflate_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/klauspost/compress/flate/dict_decoder.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/klauspost/compress/flate/dict_decoder.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/klauspost/compress/flate/dict_decoder_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/klauspost/compress/flate/dict_decoder_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/klauspost/compress/flate/flate_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/klauspost/compress/flate/flate_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/klauspost/compress/flate/gen.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/klauspost/compress/flate/gen.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/klauspost/compress/flate/huffman_bit_writer.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/klauspost/compress/flate/huffman_bit_writer.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/klauspost/compress/flate/huffman_bit_writer_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/klauspost/compress/flate/huffman_bit_writer_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/klauspost/compress/flate/huffman_code.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/klauspost/compress/flate/huffman_code.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/klauspost/compress/flate/inflate.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/klauspost/compress/flate/inflate.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/klauspost/compress/flate/inflate_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/klauspost/compress/flate/inflate_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/klauspost/compress/flate/reader_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/klauspost/compress/flate/reader_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/klauspost/compress/flate/reverse_bits.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/klauspost/compress/flate/reverse_bits.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/klauspost/compress/flate/snappy.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/klauspost/compress/flate/snappy.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/klauspost/compress/flate/token.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/klauspost/compress/flate/token.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/klauspost/compress/flate/writer_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/klauspost/compress/flate/writer_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/klauspost/compress/fse/bitreader.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/klauspost/compress/fse/bitreader.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/klauspost/compress/fse/bitwriter.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/klauspost/compress/fse/bitwriter.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/klauspost/compress/fse/bytereader.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/klauspost/compress/fse/bytereader.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/klauspost/compress/fse/compress.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/klauspost/compress/fse/compress.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/klauspost/compress/fse/decompress.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/klauspost/compress/fse/decompress.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/klauspost/compress/fse/fse.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/klauspost/compress/fse/fse.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/klauspost/compress/fse/fse_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/klauspost/compress/fse/fse_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/klauspost/compress/gzip/example_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/klauspost/compress/gzip/example_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/klauspost/compress/gzip/gunzip.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/klauspost/compress/gzip/gunzip.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/klauspost/compress/gzip/gunzip_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/klauspost/compress/gzip/gunzip_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/klauspost/compress/gzip/gzip.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/klauspost/compress/gzip/gzip.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/klauspost/compress/gzip/gzip_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/klauspost/compress/gzip/gzip_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/klauspost/compress/huff0/bitreader.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/klauspost/compress/huff0/bitreader.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/klauspost/compress/huff0/bitwriter.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/klauspost/compress/huff0/bitwriter.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/klauspost/compress/huff0/bytereader.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/klauspost/compress/huff0/bytereader.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/klauspost/compress/huff0/compress.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/klauspost/compress/huff0/compress.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/klauspost/compress/huff0/compress_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/klauspost/compress/huff0/compress_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/klauspost/compress/huff0/decompress.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/klauspost/compress/huff0/decompress.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/klauspost/compress/huff0/decompress_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/klauspost/compress/huff0/decompress_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/klauspost/compress/huff0/huff0.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/klauspost/compress/huff0/huff0.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/klauspost/compress/s2/decode.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/klauspost/compress/s2/decode.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/klauspost/compress/s2/decode_amd64.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/klauspost/compress/s2/decode_amd64.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/klauspost/compress/s2/decode_other.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/klauspost/compress/s2/decode_other.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/klauspost/compress/s2/decode_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/klauspost/compress/s2/decode_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/klauspost/compress/s2/encode.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/klauspost/compress/s2/encode.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/klauspost/compress/s2/encode_better.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/klauspost/compress/s2/encode_better.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/klauspost/compress/s2/encode_other.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/klauspost/compress/s2/encode_other.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/klauspost/compress/s2/encode_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/klauspost/compress/s2/encode_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/klauspost/compress/s2/s2.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/klauspost/compress/s2/s2.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/klauspost/compress/s2/s2_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/klauspost/compress/s2/s2_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/klauspost/compress/snappy/decode.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/klauspost/compress/snappy/decode.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/klauspost/compress/snappy/decode_amd64.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/klauspost/compress/snappy/decode_amd64.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/klauspost/compress/snappy/decode_other.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/klauspost/compress/snappy/decode_other.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/klauspost/compress/snappy/encode.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/klauspost/compress/snappy/encode.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/klauspost/compress/snappy/encode_amd64.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/klauspost/compress/snappy/encode_amd64.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/klauspost/compress/snappy/encode_other.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/klauspost/compress/snappy/encode_other.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/klauspost/compress/snappy/golden_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/klauspost/compress/snappy/golden_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/klauspost/compress/snappy/snappy.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/klauspost/compress/snappy/snappy.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/klauspost/compress/snappy/snappy_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/klauspost/compress/snappy/snappy_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/klauspost/compress/zip/example_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/klauspost/compress/zip/example_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/klauspost/compress/zip/reader.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/klauspost/compress/zip/reader.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/klauspost/compress/zip/reader_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/klauspost/compress/zip/reader_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/klauspost/compress/zip/register.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/klauspost/compress/zip/register.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/klauspost/compress/zip/struct.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/klauspost/compress/zip/struct.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/klauspost/compress/zip/writer.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/klauspost/compress/zip/writer.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/klauspost/compress/zip/writer_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/klauspost/compress/zip/writer_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/klauspost/compress/zip/zip_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/klauspost/compress/zip/zip_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/klauspost/compress/zlib/example_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/klauspost/compress/zlib/example_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/klauspost/compress/zlib/reader.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/klauspost/compress/zlib/reader.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/klauspost/compress/zlib/reader_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/klauspost/compress/zlib/reader_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/klauspost/compress/zlib/writer.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/klauspost/compress/zlib/writer.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/klauspost/compress/zlib/writer_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/klauspost/compress/zlib/writer_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/klauspost/compress/zstd/bitreader.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/klauspost/compress/zstd/bitreader.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/klauspost/compress/zstd/bitwriter.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/klauspost/compress/zstd/bitwriter.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/klauspost/compress/zstd/blockdec.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/klauspost/compress/zstd/blockdec.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/klauspost/compress/zstd/blockenc.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/klauspost/compress/zstd/blockenc.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/klauspost/compress/zstd/blocktype_string.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/klauspost/compress/zstd/blocktype_string.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/klauspost/compress/zstd/bytebuf.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/klauspost/compress/zstd/bytebuf.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/klauspost/compress/zstd/bytereader.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/klauspost/compress/zstd/bytereader.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/klauspost/compress/zstd/decoder.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/klauspost/compress/zstd/decoder.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/klauspost/compress/zstd/decoder_options.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/klauspost/compress/zstd/decoder_options.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/klauspost/compress/zstd/decoder_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/klauspost/compress/zstd/decoder_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/klauspost/compress/zstd/enc_dfast.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/klauspost/compress/zstd/enc_dfast.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/klauspost/compress/zstd/enc_fast.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/klauspost/compress/zstd/enc_fast.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/klauspost/compress/zstd/enc_params.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/klauspost/compress/zstd/enc_params.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/klauspost/compress/zstd/encoder.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/klauspost/compress/zstd/encoder.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/klauspost/compress/zstd/encoder_options.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/klauspost/compress/zstd/encoder_options.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/klauspost/compress/zstd/encoder_options_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/klauspost/compress/zstd/encoder_options_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/klauspost/compress/zstd/encoder_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/klauspost/compress/zstd/encoder_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/klauspost/compress/zstd/framedec.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/klauspost/compress/zstd/framedec.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/klauspost/compress/zstd/frameenc.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/klauspost/compress/zstd/frameenc.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/klauspost/compress/zstd/fse_decoder.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/klauspost/compress/zstd/fse_decoder.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/klauspost/compress/zstd/fse_encoder.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/klauspost/compress/zstd/fse_encoder.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/klauspost/compress/zstd/fse_predefined.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/klauspost/compress/zstd/fse_predefined.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/klauspost/compress/zstd/hash.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/klauspost/compress/zstd/hash.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/klauspost/compress/zstd/history.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/klauspost/compress/zstd/history.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/klauspost/compress/zstd/internal/xxhash/xxhash.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/klauspost/compress/zstd/internal/xxhash/xxhash.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/klauspost/compress/zstd/internal/xxhash/xxhash_amd64.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/klauspost/compress/zstd/internal/xxhash/xxhash_amd64.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/klauspost/compress/zstd/internal/xxhash/xxhash_other.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/klauspost/compress/zstd/internal/xxhash/xxhash_other.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/klauspost/compress/zstd/internal/xxhash/xxhash_safe.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/klauspost/compress/zstd/internal/xxhash/xxhash_safe.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/klauspost/compress/zstd/internal/xxhash/xxhash_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/klauspost/compress/zstd/internal/xxhash/xxhash_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/klauspost/compress/zstd/seqdec.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/klauspost/compress/zstd/seqdec.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/klauspost/compress/zstd/seqenc.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/klauspost/compress/zstd/seqenc.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/klauspost/compress/zstd/snappy.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/klauspost/compress/zstd/snappy.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/klauspost/compress/zstd/snappy_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/klauspost/compress/zstd/snappy_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/klauspost/compress/zstd/zstd.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/klauspost/compress/zstd/zstd.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/klauspost/cpuid/cpuid.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/klauspost/cpuid/cpuid.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/klauspost/cpuid/cpuid_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/klauspost/cpuid/cpuid_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/klauspost/cpuid/detect_intel.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/klauspost/cpuid/detect_intel.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/klauspost/cpuid/detect_ref.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/klauspost/cpuid/detect_ref.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/klauspost/cpuid/generate.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/klauspost/cpuid/generate.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/klauspost/cpuid/mockcpu_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/klauspost/cpuid/mockcpu_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/klauspost/cpuid/private-gen.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/klauspost/cpuid/private-gen.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/klauspost/cpuid/private/cpuid.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/klauspost/cpuid/private/cpuid.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/klauspost/cpuid/private/cpuid_detect_intel.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/klauspost/cpuid/private/cpuid_detect_intel.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/klauspost/cpuid/private/cpuid_detect_ref.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/klauspost/cpuid/private/cpuid_detect_ref.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/klauspost/cpuid/private/cpuid_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/klauspost/cpuid/private/cpuid_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/microcosm-cc/bluemonday/cmd/sanitise_html_email/doc.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/microcosm-cc/bluemonday/cmd/sanitise_html_email/doc.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/microcosm-cc/bluemonday/cmd/sanitise_html_email/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/microcosm-cc/bluemonday/cmd/sanitise_html_email/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/microcosm-cc/bluemonday/cmd/sanitise_ugc/doc.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/microcosm-cc/bluemonday/cmd/sanitise_ugc/doc.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/microcosm-cc/bluemonday/cmd/sanitise_ugc/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/microcosm-cc/bluemonday/cmd/sanitise_ugc/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/microcosm-cc/bluemonday/doc.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/microcosm-cc/bluemonday/doc.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/microcosm-cc/bluemonday/example_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/microcosm-cc/bluemonday/example_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/microcosm-cc/bluemonday/handlers.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/microcosm-cc/bluemonday/handlers.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/microcosm-cc/bluemonday/handlers_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/microcosm-cc/bluemonday/handlers_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/microcosm-cc/bluemonday/helpers.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/microcosm-cc/bluemonday/helpers.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/microcosm-cc/bluemonday/helpers_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/microcosm-cc/bluemonday/helpers_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/microcosm-cc/bluemonday/policies.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/microcosm-cc/bluemonday/policies.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/microcosm-cc/bluemonday/policies_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/microcosm-cc/bluemonday/policies_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/microcosm-cc/bluemonday/policy.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/microcosm-cc/bluemonday/policy.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/microcosm-cc/bluemonday/policy_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/microcosm-cc/bluemonday/policy_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/microcosm-cc/bluemonday/sanitize.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/microcosm-cc/bluemonday/sanitize.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/microcosm-cc/bluemonday/sanitize_go1.8_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/microcosm-cc/bluemonday/sanitize_go1.8_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/microcosm-cc/bluemonday/sanitize_ltgo1.8_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/microcosm-cc/bluemonday/sanitize_ltgo1.8_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/microcosm-cc/bluemonday/sanitize_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/microcosm-cc/bluemonday/sanitize_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/modern-go/concurrent/executor.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/modern-go/concurrent/executor.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/modern-go/concurrent/go_above_19.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/modern-go/concurrent/go_above_19.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/modern-go/concurrent/go_below_19.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/modern-go/concurrent/go_below_19.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/modern-go/concurrent/log.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/modern-go/concurrent/log.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/modern-go/concurrent/map_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/modern-go/concurrent/map_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/modern-go/concurrent/unbounded_executor.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/modern-go/concurrent/unbounded_executor.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/modern-go/concurrent/unbounded_executor_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/modern-go/concurrent/unbounded_executor_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/modern-go/reflect2/go_above_17.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/modern-go/reflect2/go_above_17.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/modern-go/reflect2/go_above_19.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/modern-go/reflect2/go_above_19.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/modern-go/reflect2/go_below_17.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/modern-go/reflect2/go_below_17.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/modern-go/reflect2/go_below_19.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/modern-go/reflect2/go_below_19.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/modern-go/reflect2/reflect2.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/modern-go/reflect2/reflect2.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/modern-go/reflect2/reflect2_kind.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/modern-go/reflect2/reflect2_kind.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/modern-go/reflect2/safe_field.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/modern-go/reflect2/safe_field.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/modern-go/reflect2/safe_map.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/modern-go/reflect2/safe_map.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/modern-go/reflect2/safe_slice.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/modern-go/reflect2/safe_slice.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/modern-go/reflect2/safe_struct.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/modern-go/reflect2/safe_struct.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/modern-go/reflect2/safe_type.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/modern-go/reflect2/safe_type.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/modern-go/reflect2/type_map.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/modern-go/reflect2/type_map.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/modern-go/reflect2/unsafe_array.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/modern-go/reflect2/unsafe_array.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/modern-go/reflect2/unsafe_eface.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/modern-go/reflect2/unsafe_eface.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/modern-go/reflect2/unsafe_field.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/modern-go/reflect2/unsafe_field.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/modern-go/reflect2/unsafe_iface.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/modern-go/reflect2/unsafe_iface.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/modern-go/reflect2/unsafe_link.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/modern-go/reflect2/unsafe_link.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/modern-go/reflect2/unsafe_map.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/modern-go/reflect2/unsafe_map.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/modern-go/reflect2/unsafe_ptr.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/modern-go/reflect2/unsafe_ptr.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/modern-go/reflect2/unsafe_slice.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/modern-go/reflect2/unsafe_slice.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/modern-go/reflect2/unsafe_struct.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/modern-go/reflect2/unsafe_struct.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/modern-go/reflect2/unsafe_type.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/modern-go/reflect2/unsafe_type.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/ryanuber/columnize/columnize.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/ryanuber/columnize/columnize.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/ryanuber/columnize/columnize_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/ryanuber/columnize/columnize_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/shurcooL/sanitized_anchor_name/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/shurcooL/sanitized_anchor_name/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/shurcooL/sanitized_anchor_name/main_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/shurcooL/sanitized_anchor_name/main_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/gopkg.in/yaml.v2/apic.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/gopkg.in/yaml.v2/apic.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/gopkg.in/yaml.v2/decode.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/gopkg.in/yaml.v2/decode.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/gopkg.in/yaml.v2/decode_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/gopkg.in/yaml.v2/decode_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/gopkg.in/yaml.v2/emitterc.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/gopkg.in/yaml.v2/emitterc.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/gopkg.in/yaml.v2/encode.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/gopkg.in/yaml.v2/encode.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/gopkg.in/yaml.v2/encode_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/gopkg.in/yaml.v2/encode_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/gopkg.in/yaml.v2/example_embedded_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/gopkg.in/yaml.v2/example_embedded_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/gopkg.in/yaml.v2/parserc.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/gopkg.in/yaml.v2/parserc.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/gopkg.in/yaml.v2/readerc.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/gopkg.in/yaml.v2/readerc.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/gopkg.in/yaml.v2/resolve.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/gopkg.in/yaml.v2/resolve.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/gopkg.in/yaml.v2/scannerc.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/gopkg.in/yaml.v2/scannerc.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/gopkg.in/yaml.v2/sorter.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/gopkg.in/yaml.v2/sorter.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/gopkg.in/yaml.v2/suite_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/gopkg.in/yaml.v2/suite_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/gopkg.in/yaml.v2/writerc.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/gopkg.in/yaml.v2/writerc.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/gopkg.in/yaml.v2/yaml.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/gopkg.in/yaml.v2/yaml.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/gopkg.in/yaml.v2/yamlh.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/gopkg.in/yaml.v2/yamlh.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/gopkg.in/yaml.v2/yamlprivateh.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/gopkg.in/yaml.v2/yamlprivateh.go" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Go File" />
+        <option value="JavaScript File" />
+        <option value="HTML File" />
+        <option value="Go Application" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>13901319300</find>
+      <find>ListData</find>
+      <find>IndexView</find>
+    </findStrings>
+    <dirStrings>
+      <dir>D:\go\src\hello</dir>
+    </dirStrings>
+  </component>
+  <component name="GOROOT" path="C:\Go" />
+  <component name="Git.Settings">
+    <option name="ROOT_SYNC" value="DONT_SYNC" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/src/github.com/microcosm-cc/bluemonday" />
+  </component>
+  <component name="ProjectId" id="1UGmk7pgF78MpB2nn1vRujZjjIF" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="PropertiesComponent">
+    <property name="DefaultGoTemplateProperty" value="Go Application" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="configurable.Global.GOPATH.is.expanded" value="true" />
+    <property name="configurable.Module.GOPATH.is.expanded" value="false" />
+    <property name="configurable.Project.GOPATH.is.expanded" value="true" />
+    <property name="go.gopath.indexing.explicitly.defined" value="true" />
+    <property name="go.import.settings.migrated" value="true" />
+    <property name="go.sdk.automatically.set" value="true" />
+    <property name="go.tried.to.enable.integration.dep.integrator" value="true" />
+    <property name="go.tried.to.enable.integration.vgo.integrator" value="true" />
+    <property name="go.vendoring.notification.had.been.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/ego" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="settings.editor.selected.configurable" value="com.goide.configuration.GoLibrariesConfigurableProvider" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\go\src\hanru" />
+      <recent name="D:\go\src\spider" />
+      <recent name="D:\go\src\news\views" />
+      <recent name="D:\go\src\news\static\js" />
+      <recent name="D:\go\src\news\static" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Go Build.go build ego">
+    <configuration name="go build ego" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="go" />
+      <working_directory value="$PROJECT_DIR$/" />
+      <kind value="PACKAGE" />
+      <filePath value="$PROJECT_DIR$/src/ego/main.go" />
+      <package value="ego" />
+      <directory value="$PROJECT_DIR$/" />
+      <method v="2" />
+    </configuration>
+    <configuration name="go build hanru" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="go" />
+      <working_directory value="$PROJECT_DIR$/" />
+      <kind value="PACKAGE" />
+      <filePath value="$PROJECT_DIR$/src/hanru/3_断点续传.go" />
+      <package value="hanru" />
+      <directory value="$PROJECT_DIR$/" />
+      <output_directory value="$PROJECT_DIR$/bin" />
+      <method v="2" />
+    </configuration>
+    <configuration name="go build hello" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="go" />
+      <working_directory value="$PROJECT_DIR$/" />
+      <kind value="PACKAGE" />
+      <filePath value="$PROJECT_DIR$/src/hello/main.go" />
+      <package value="hello" />
+      <directory value="$PROJECT_DIR$/" />
+      <method v="2" />
+    </configuration>
+    <configuration name="go build hello.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="go" />
+      <working_directory value="$PROJECT_DIR$/" />
+      <kind value="FILE" />
+      <filePath value="$PROJECT_DIR$/src/hello.go" />
+      <directory value="$PROJECT_DIR$/" />
+      <method v="2" />
+    </configuration>
+    <configuration name="go build src/" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="go" />
+      <working_directory value="$PROJECT_DIR$/" />
+      <kind value="DIRECTORY" />
+      <filePath value="$PROJECT_DIR$/src/hello/main.go" />
+      <package value="hello" />
+      <directory value="$PROJECT_DIR$/src" />
+      <output_directory value="$PROJECT_DIR$/bin" />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Go Build.go build ego" />
+      <item itemvalue="Go Build.go build src/" />
+      <item itemvalue="Go Build.go build hello.go" />
+      <item itemvalue="Go Build.go build hello" />
+      <item itemvalue="Go Build.go build hanru" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Go Build.go build ego" />
+        <item itemvalue="Go Build.go build hanru" />
+        <item itemvalue="Go Build.go build hello" />
+        <item itemvalue="Go Build.go build src/" />
+        <item itemvalue="Go Build.go build hello.go" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/src/hello.go</url>
+          <line>4</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/src/ego/main.go</url>
+          <line>29</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
