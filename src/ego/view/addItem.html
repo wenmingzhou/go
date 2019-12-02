@@ -36,12 +36,9 @@
                     <div class="layui-inline">
                         <label class="layui-form-label">分类</label>
                         <div class="layui-input-inline">
-                            <select name="quiz">
-                                <option value="请选择问题">__|&nbsp;请选择问题</option>
-                                <option value="请选择问题">__|__|&nbsp;请选择问题</option>
-                                <option value="请选择问题">__|&nbsp;请选择问题</option>
-                                <option value="请选择问题">__|__|&nbsp;请选择问题</option>
-                            </select>
+                            <a id="item_add_selectcate" href="#">选择类目</a>
+                            <span id="item_add_selectcate_span"></span>
+                            <input id="item_add_selectcate_hidden" type="hidden">
                         </div>
                     </div>
                 </div>
@@ -80,39 +77,21 @@
             </form>
         </div>
     </body>
-    <script>
-      layui.use(['laydate','form'], function(){
-        var laydate = layui.laydate;
-        var  form = layui.form;
-        var  $ = layui.$;
-        $('body').on('click', '.deleteData',function(){
-              var id = $(this).data('rowid');
-            $.ajax({
-                url: "/item/delete",
-                type: 'get',
-                data: 'id='+id,
-                success: function (res) {
-                    if (res.Status == '200') {
-                        alert("删除成功")
-                        return false;
-                    } else {
-                        alert("删除失败！")
-                        return false;
-                    }
-                },
-            });
-          });
+    <div id="item_add_dialog"></div>
 
-        // 监听全选
-        form.on('checkbox(checkall)', function(data){
-          if(data.elem.checked){
-            $('tbody input').prop('checked',true);
-          }else{
-            $('tbody input').prop('checked',false);
-          }
-          form.render('checkbox');
-        });
-      });
+    <script type="text/javascript">
+        $("#item_add_selectcate").click(function () {
+            $('#item_add_dialog').dialog({
+                title:'选择类目',
+                width:600,
+                height:400,
+                closed:false,
+                cache:false,
+                href:'/page/item_cate_tree',
+                modal:true,
+            })
+
+        })
 
     </script>
 

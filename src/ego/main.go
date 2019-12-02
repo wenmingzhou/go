@@ -3,6 +3,7 @@ package main
 import (
 	"ego/src/commons"
 	"ego/src/item"
+	"ego/src/item/cat"
 	"ego/src/user"
 	"fmt"
 	"github.com/gorilla/mux"
@@ -22,10 +23,11 @@ func welcome(w http.ResponseWriter, r *http.Request) {
 	// 利用给定数据渲染模板，并将结果写入w
 	tmpl.Execute(w, nil)
 }
+
 //restful显示页面
 func showPage(w http.ResponseWriter, r *http.Request) {
-	vars :=mux.Vars(r)
-	tmpl, _ := template.ParseFiles("view/"+vars["page"]+".html")
+	vars := mux.Vars(r)
+	tmpl, _ := template.ParseFiles("view/" + vars["page"] + ".html")
 	tmpl.Execute(w, nil)
 }
 func main() {
@@ -39,13 +41,14 @@ func main() {
 		fmt.Println("HTTP server failed,err:", err)
 		return
 	}*/
-	commons.Router.HandleFunc("/",welcome)
+	commons.Router.HandleFunc("/", welcome)
 	//满足/page/{page}格式的处理
-	commons.Router.HandleFunc("/page/{page}",showPage)
-	commons.Router.PathPrefix("/static/").Handler(http.StripPrefix("/static/",http.FileServer(http.Dir("static"))))
+	commons.Router.HandleFunc("/page/{page}", showPage)
+	commons.Router.PathPrefix("/static/").Handler(http.StripPrefix("/static/", http.FileServer(http.Dir("static"))))
 
-	user.UserHandler()  //调用所用user模块的handler
-	item.ItemHandler()  //商品
-	http.ListenAndServe(":8888",commons.Router)
+	user.UserHandler()   //调用所用user模块的handler
+	item.ItemHandler()   //商品
+	cat.ItemCatHandler() //分类
+	http.ListenAndServe(":8888", commons.Router)
 
 }
