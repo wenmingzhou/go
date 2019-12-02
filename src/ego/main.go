@@ -49,6 +49,6 @@ func main() {
 	user.UserHandler()   //调用所用user模块的handler
 	item.ItemHandler()   //商品
 	cat.ItemCatHandler() //分类
-	http.ListenAndServe(":8888", commons.Router)
+	http.ListenAndServe(":9999", commons.Router)
 
 }

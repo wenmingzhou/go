@@ -10,8 +10,8 @@
         url :'/item/cat/show',
         onClick:function (node) {
             if(node.state=="open") {
-                $("item_add_selectcate_span").html(node.text);
-                $("item_add_selectcate_hidden").val(node.id);
+                $("#item_add_selectcate_span").html(node.text);
+                $("#item_add_selectcate_hidden").val(node.id);
                 $('#item_add_dialog').dialog("destroy")
             }
         }
