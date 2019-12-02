@@ -3,7 +3,12 @@ package item
 import (
 	"ego/src/commons"
 	"ego/src/item/cat"
+	"io/ioutil"
+	"math/rand"
+	"mime/multipart"
+	"strconv"
 	"strings"
+	"time"
 )
 
 func showItemService(page, rows int) (e *commons.Datagrid) {
@@ -62,4 +67,26 @@ func outStockByIdsService(ids string) (e commons.EgoResult) {
 		e.Status = 200
 	}
 	return
+}
+
+func imageUploadService(f multipart.File, h *multipart.FileHeader) map[string]interface{} {
+	m := make(map[string]interface{})
+	b, err := ioutil.ReadAll(f)
+	if err != nil {
+		m["error"] = 1
+		m["message"] = "上传失败,服务器错误"
+		return m
+	}
+	//纳秒时间戳+随机数+扩展名
+	rand.Seed(time.Now().UnixNano())
+	fileName := "static/images/" + strconv.Itoa(int(time.Now().UnixNano())) + strconv.Itoa(rand.Intn(1000)) + h.Filename[strings.LastIndex(h.Filename, "."):]
+	err = ioutil.WriteFile(fileName, b, 0777)
+	if err != nil {
+		m["error"] = 1
+		m["message"] = "上传失败,服务器错误"
+		return m
+	}
+	m["error"] = 0
+	m["message"] = commons.CurrentPath + fileName
+	return m
 }

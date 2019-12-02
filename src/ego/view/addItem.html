@@ -12,8 +12,12 @@
         <script src="/static/easyui/js/jquery.min.js" charset="utf-8"></script>
         <script src="/static/easyui/js/jquery.easyui.min.js" charset="utf-8"></script>
 
+        <link href="/static/kindeditor/themes/default/default.css" type="text/css" rel="stylesheet">
+        <script type="text/javascript" charset="utf-8" src="/static/kindeditor/kindeditor-all-min.js"></script>
+        <script type="text/javascript" charset="utf-8" src="/static/kindeditor/lang/zh_CN.js"></script>
         <script src="/static/lib/layui/layui.js" charset="utf-8"></script>
         <script type="text/javascript" src="/static/js/xadmin.js"></script>
+        <script type="text/javascript" src="/static/js/demon.js"></script>
         <!--[if lt IE 9]>
           <script src="https://cdn.staticfile.org/html5shiv/r29/html5.min.js"></script>
           <script src="https://cdn.staticfile.org/respond.js/1.4.2/respond.min.js"></script>
@@ -64,6 +68,14 @@
                 </div>
 
                 <div class="layui-form-item">
+                    <label class="layui-form-label">商品图片</label>
+                    <div class="layui-input-block">
+                        <a href="javascript:void(0)" class="easyui-linkbutton picFileUpload">上传</a>
+                        <input type="hidden" name="image"/>
+                    </div>
+                </div>
+
+                <div class="layui-form-item">
                     <label class="layui-form-label">库存数量</label>
                     <div class="layui-input-block">
                         <input type="text" name="title" lay-verify="title" autocomplete="off" placeholder="请输入标题" class="layui-input">
@@ -92,7 +104,15 @@
             })
 
         })
-
+    </script>
+    <script type="text/javascript">
+        var itemAddEditor ;
+        //页面初始化完毕后执行此方法
+        $(function(){
+            //初始化类目选择和图片上传器
+            E3.init({fun:function(node){
+                }});
+        });
     </script>
 
 </html>

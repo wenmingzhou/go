@@ -3,6 +3,7 @@ package item
 import (
 	"ego/src/commons"
 	"encoding/json"
+	"fmt"
 	"net/http"
 	"strconv"
 )
@@ -12,9 +13,28 @@ func ItemHandler() {
 	commons.Router.HandleFunc("/item/delete", delByIdsController)
 	commons.Router.HandleFunc("/item/inStock", inStockByIdsController)
 	commons.Router.HandleFunc("/item/outStock", outStockByIdsController)
+	commons.Router.HandleFunc("/item/imageupload", imagesUploadController)
 
 }
 
+func imagesUploadController(w http.ResponseWriter, r *http.Request) {
+	fmt.Println("1111")
+	file, fileHeader, err := r.FormFile("imgFile")
+	if err != nil {
+		m := make(map[string]interface{})
+		m["error"] = 1
+		m["message"] = "接受图片失败"
+		b, _ := json.Marshal(m)
+		w.Header().Set(commons.HEADER_CONTENT_TYPE, commons.JSON_HEADER)
+		w.Write(b)
+		return
+	}
+	m := imageUploadService(file, fileHeader)
+	b, _ := json.Marshal(m)
+	w.Header().Set(commons.HEADER_CONTENT_TYPE, commons.JSON_HEADER)
+	w.Write(b)
+
+}
 func ShowItemController(w http.ResponseWriter, r *http.Request) {
 	page, _ := strconv.Atoi(r.FormValue("page"))
 	rows, _ := strconv.Atoi(r.FormValue("limit"))
