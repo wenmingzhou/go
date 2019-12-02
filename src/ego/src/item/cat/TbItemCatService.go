@@ -7,7 +7,7 @@ func ShowCatByIdService(id int) *TbItemCat {
 	return selByIdDao(id)
 }
 
-func ShowCateByPidService(pid int) (tree []commons.EasyUITree) {
+func ShowCatByPidService(pid int) (tree []commons.EasyUITree) {
 	cats := selByPid(pid)
 	tree = make([]commons.EasyUITree, 0)
 	for _, n := range cats {

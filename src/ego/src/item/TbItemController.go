@@ -12,7 +12,9 @@ func ItemHandler() {
 	commons.Router.HandleFunc("/item/delete", delByIdsController)
 	commons.Router.HandleFunc("/item/inStock", inStockByIdsController)
 	commons.Router.HandleFunc("/item/outStock", outStockByIdsController)
+
 }
+
 func ShowItemController(w http.ResponseWriter, r *http.Request) {
 	page, _ := strconv.Atoi(r.FormValue("page"))
 	rows, _ := strconv.Atoi(r.FormValue("limit"))

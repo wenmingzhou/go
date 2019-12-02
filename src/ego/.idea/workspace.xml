@@ -2,16 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="558b9445-6d12-4c28-b8d4-362b16384dc4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/commons/EasyUI.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/item/cat/TbItemCatController.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/view/item_cate_tree.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/main.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/commons/LayUi.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/commons/LayUi.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/item/cat/TbItemCat.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/item/cat/TbItemCat.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/item/cat/TbItemCatDao.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/item/cat/TbItemCatDao.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/item/TbItemController.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/item/TbItemController.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/item/cat/TbItemCatController.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/item/cat/TbItemController.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/item/cat/TbItemCatService.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/item/cat/TbItemCatService.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/view/addItem.html" beforeDir="false" afterPath="$PROJECT_DIR$/view/addItem.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../github.com/BurntSushi/toml" beforeDir="false" afterPath="$PROJECT_DIR$/../github.com/BurntSushi/toml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../github.com/CloudyKit/jet" beforeDir="false" afterPath="$PROJECT_DIR$/../github.com/CloudyKit/jet" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../github.com/Joker/jade" beforeDir="false" afterPath="$PROJECT_DIR$/../github.com/Joker/jade" afterDir="false" />
@@ -106,7 +100,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Go Build.go build main.go">
+  <component name="RunManager" selected="Go Build.go build ego">
     <configuration name="go build ego" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="ego" />
       <working_directory value="$PROJECT_DIR$/" />
@@ -133,27 +127,30 @@
       <directory value="$PROJECT_DIR$/" />
       <method v="2" />
     </configuration>
+    <configuration name="go test ego" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="ego" />
+      <working_directory value="$PROJECT_DIR$" />
+      <framework value="gotest" />
+      <kind value="DIRECTORY" />
+      <package value="ego" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$/" />
+      <method v="2" />
+    </configuration>
     <list>
       <item itemvalue="Go Build.go build ego" />
       <item itemvalue="Go Build.go build main.go" />
       <item itemvalue="Go Build.go build ego/src" />
+      <item itemvalue="Go Test.go test ego" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Go Build.go build ego" />
+        <item itemvalue="Go Test.go test ego" />
         <item itemvalue="Go Build.go build main.go" />
         <item itemvalue="Go Build.go build ego/src" />
-        <item itemvalue="Go Build.go build ego" />
       </list>
     </recent_temporary>
-  </component>
-  <component name="TodoView">
-    <todo-panel id="selected-file">
-      <is-autoscroll-to-source value="true" />
-    </todo-panel>
-    <todo-panel id="all">
-      <are-packages-shown value="true" />
-      <is-autoscroll-to-source value="true" />
-    </todo-panel>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -177,6 +174,7 @@
     <MESSAGE value="分类删除" />
     <MESSAGE value="上架商品" />
     <MESSAGE value="商品上传" />
-    <option name="LAST_COMMIT_MESSAGE" value="商品上传" />
+    <MESSAGE value="商品目录" />
+    <option name="LAST_COMMIT_MESSAGE" value="商品目录" />
   </component>
 </project>
