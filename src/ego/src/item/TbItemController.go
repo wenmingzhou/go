@@ -18,7 +18,7 @@ func ItemHandler() {
 
 func imagesUploadController(w http.ResponseWriter, r *http.Request) {
 
-	file, fileHeader, err := r.FormFile("imgFile")
+	file, fileHeader, err := r.FormFile("uploadFile")
 	if err != nil {
 		m := make(map[string]interface{})
 		m["error"] = 1

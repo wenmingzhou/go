@@ -35,7 +35,7 @@
         </div>
         <div class="layui-fluid">
 
-            <form class="form" action=""  method="POST" enctype="multipart/form-data">
+            <form class="form" id="form"  method="POST" enctype="multipart/form-data">
                 <div class="layui-form-item">
                     <div class="layui-inline">
                         <label class="layui-form-label">分类</label>
@@ -71,7 +71,7 @@
                     <label class="layui-form-label">商品图片</label>
                     <div class="layui-input-block">
                         <a href="javascript:void(0)" class="easyui-linkbutton picFileUpload">上传</a>
-                        <input type="hidden" name="image"/>
+                        <input type="hidden" name="image" multiple/>
                     </div>
                 </div>
 
