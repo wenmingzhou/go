@@ -87,6 +87,6 @@ func imageUploadService(f multipart.File, h *multipart.FileHeader) map[string]in
 		return m
 	}
 	m["error"] = 0
-	m["message"] = commons.CurrentPath + fileName
+	m["url"] = commons.CurrentPath + fileName
 	return m
 }

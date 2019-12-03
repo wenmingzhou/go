@@ -29,7 +29,6 @@ var E3 = {
 
             if(data && data.pics){
                 var imgs = data.pics.split(",");
-                alert("11");
                 for(var i in imgs){
                     if($.trim(imgs[i]).length > 0){
                         _ele.siblings(".pics").find("ul").append("<li><a href='"+imgs[i]+"' target='_blank'><img src='"+imgs[i]+"' width='80' height='50' /></a></li>");
@@ -39,14 +38,17 @@ var E3 = {
             //给“上传图片按钮”绑定click事件
             $(e).click(function(){
                 var form = $(this).parentsUntil("form").parent("form");
+
                 //打开图片上传窗口
                 KindEditor.editor(E3.kingEditorParams).loadPlugin('multiimage',function(){
+
                     var editor = this;
                     editor.plugin.multiImageDialog({
+
                         clickFn : function(urlList) {
+
                             var imgArray = [];
                             KindEditor.each(urlList, function(i, data) {
-
                                 imgArray.push(data.url);
                                 form.find(".pics ul").append("<li><a href='"+data.url+"' target='_blank'><img src='"+data.url+"' width='80' height='50' /></a></li>");
                             });

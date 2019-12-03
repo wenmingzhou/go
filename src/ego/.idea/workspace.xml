@@ -3,8 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="558b9445-6d12-4c28-b8d4-362b16384dc4" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/main.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/item/TbItemController.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/item/TbItemController.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/commons/CommonsVars.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/commons/CommonsVars.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/item/TbItemService.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/item/TbItemService.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/static/js/demon.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/js/demon.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/view/addItem.html" beforeDir="false" afterPath="$PROJECT_DIR$/view/addItem.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../github.com/BurntSushi/toml" beforeDir="false" afterPath="$PROJECT_DIR$/../github.com/BurntSushi/toml" afterDir="false" />
