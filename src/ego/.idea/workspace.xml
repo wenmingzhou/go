@@ -2,9 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="558b9445-6d12-4c28-b8d4-362b16384dc4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/commons/Commons.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/item/desc/TbItemDesc.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/item/desc/TbItemDescDao.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/item/desc/TbItemDescService.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/item/TbItemController.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/item/TbItemController.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/item/TbItemDao.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/item/TbItemDao.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/item/TbItemService.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/item/TbItemService.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/view/addItem.html" beforeDir="false" afterPath="$PROJECT_DIR$/view/addItem.html" afterDir="false" />
@@ -179,6 +180,7 @@
     <MESSAGE value="商品目录" />
     <MESSAGE value="选择目录" />
     <MESSAGE value="上传图片" />
-    <option name="LAST_COMMIT_MESSAGE" value="上传图片" />
+    <MESSAGE value="新增商品" />
+    <option name="LAST_COMMIT_MESSAGE" value="新增商品" />
   </component>
 </project>

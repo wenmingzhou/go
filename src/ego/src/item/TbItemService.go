@@ -3,6 +3,7 @@ package item
 import (
 	"ego/src/commons"
 	"ego/src/item/cat"
+	"ego/src/item/desc"
 	"io/ioutil"
 	"math/rand"
 	"mime/multipart"
@@ -112,9 +113,21 @@ func insertService(f url.Values) (e commons.EgoResult) {
 	t.Updated = date
 	id := commons.GenId()
 	t.Id = id
+	//商品表新增
 	count := insertItemDao(t)
 	if count > 0 {
-		e.Status = 200
+		var tbItemDesc desc.TbItemDesc
+		tbItemDesc.ItemId = id
+		tbItemDesc.Created = date
+		tbItemDesc.Updated = date
+		tbItemDesc.ItemDesc = f["desc"][0]
+		countDesc := desc.Insert(tbItemDesc)
+		if countDesc > 0 {
+			e.Status = 200
+		} else {
+			//删除商品中的数据
+			delById(id)
+		}
 	}
 	return
 }

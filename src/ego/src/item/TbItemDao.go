@@ -73,3 +73,13 @@ func insertItemDao(t Tbitem) int {
 	}
 	return int(count)
 }
+
+//根据商品id删除数据
+func delById(id int) int {
+	count, err := commons.Dml("delete from tb_item where id=?", id)
+	if err != nil {
+		fmt.Println(err)
+		return -1
+	}
+	return int(count)
+}
