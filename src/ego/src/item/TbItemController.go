@@ -14,7 +14,19 @@ func ItemHandler() {
 	commons.Router.HandleFunc("/item/outStock", outStockByIdsController)
 	commons.Router.HandleFunc("/item/imageUpload", imagesUploadController)
 	commons.Router.HandleFunc("/item/add", insertController)
+	commons.Router.HandleFunc("/item/showItemById", showItemDescCatController)
 
+}
+
+//显示修改页面信息
+func showItemDescCatController(w http.ResponseWriter, r *http.Request) {
+	id, _ := strconv.Atoi(r.FormValue("id"))
+
+	er := showItemDescCatService(id)
+
+	b, _ := json.Marshal(er)
+	w.Header().Set(commons.HEADER_CONTENT_TYPE, commons.JSON_HEADER)
+	w.Write(b)
 }
 
 //商品新增
