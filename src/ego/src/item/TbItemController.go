@@ -13,9 +13,21 @@ func ItemHandler() {
 	commons.Router.HandleFunc("/item/inStock", inStockByIdsController)
 	commons.Router.HandleFunc("/item/outStock", outStockByIdsController)
 	commons.Router.HandleFunc("/item/imageUpload", imagesUploadController)
+	commons.Router.HandleFunc("/item/add", insertController)
 
 }
 
+//商品新增
+func insertController(w http.ResponseWriter, r *http.Request) {
+	//需要先进行解析
+	r.ParseForm()
+	er := insertService(r.Form)
+	b, _ := json.Marshal(er)
+	w.Header().Set(commons.HEADER_CONTENT_TYPE, commons.JSON_HEADER)
+	w.Write(b)
+}
+
+//图片上传
 func imagesUploadController(w http.ResponseWriter, r *http.Request) {
 
 	file, fileHeader, err := r.FormFile("uploadFile")

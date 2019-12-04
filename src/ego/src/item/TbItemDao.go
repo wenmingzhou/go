@@ -62,3 +62,14 @@ func updateStatusByIdsDao(ids []string, status int) int {
 	}
 	return int(count)
 }
+
+//商品新增
+func insertItemDao(t Tbitem) int {
+	count, err := commons.Dml("insert into tb_item values (?,?,?,?,?,?,?,?,?,?,?) ",
+		t.Id, t.Title, t.SellPoint, t.Price, t.Num, t.Barcode, t.Image, t.Cid, t.Status, t.Created, t.Updated)
+	if err != nil {
+		fmt.Println(err)
+		return -1
+	}
+	return int(count)
+}

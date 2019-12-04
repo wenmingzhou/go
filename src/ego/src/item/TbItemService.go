@@ -6,6 +6,7 @@ import (
 	"io/ioutil"
 	"math/rand"
 	"mime/multipart"
+	"net/url"
 	"strconv"
 	"strings"
 	"time"
@@ -89,4 +90,31 @@ func imageUploadService(f multipart.File, h *multipart.FileHeader) map[string]in
 	m["error"] = 0
 	m["url"] = commons.CurrentPath + fileName
 	return m
+}
+
+//商品新增
+func insertService(f url.Values) (e commons.EgoResult) {
+	var t Tbitem
+	cid, _ := strconv.Atoi(f["cid"][0])
+
+	t.Cid = cid
+	t.Title = f["title"][0]
+	t.SellPoint = f["sell_point"][0]
+	price, _ := strconv.Atoi(f["price"][0])
+	t.Price = price
+	num, _ := strconv.Atoi(f["num"][0])
+	t.Num = num
+	t.Image = f["image"][0]
+
+	t.Status = 1
+	date := time.Now().Format("2006-01-02 15:04:05")
+	t.Created = date
+	t.Updated = date
+	id := commons.GenId()
+	t.Id = id
+	count := insertItemDao(t)
+	if count > 0 {
+		e.Status = 200
+	}
+	return
 }
