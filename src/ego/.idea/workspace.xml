@@ -2,15 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="558b9445-6d12-4c28-b8d4-362b16384dc4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/view/editItem.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/item/TbItem.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/item/TbItem.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/item/TbItemController.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/item/TbItemController.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/item/TbItemDao.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/item/TbItemDao.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/item/TbItemService.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/item/TbItemService.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/item/desc/TbItemDescDao.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/item/desc/TbItemDescDao.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/item/desc/TbItemDescService.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/item/desc/TbItemDescService.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/view/showItemList.html" beforeDir="false" afterPath="$PROJECT_DIR$/view/showItemList.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/commons/DBUtils.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/commons/DBUtils.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../github.com/BurntSushi/toml" beforeDir="false" afterPath="$PROJECT_DIR$/../github.com/BurntSushi/toml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../github.com/CloudyKit/jet" beforeDir="false" afterPath="$PROJECT_DIR$/../github.com/CloudyKit/jet" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../github.com/Joker/jade" beforeDir="false" afterPath="$PROJECT_DIR$/../github.com/Joker/jade" afterDir="false" />
@@ -184,6 +177,7 @@
     <MESSAGE value="上传图片" />
     <MESSAGE value="新增商品" />
     <MESSAGE value="商品描述附属表" />
-    <option name="LAST_COMMIT_MESSAGE" value="商品描述附属表" />
+    <MESSAGE value="商品编辑功能" />
+    <option name="LAST_COMMIT_MESSAGE" value="商品编辑功能" />
   </component>
 </project>
