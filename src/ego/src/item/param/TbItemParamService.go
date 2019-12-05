@@ -40,3 +40,13 @@ func delByIdsService(ids string) (e commons.EgoResult) {
 	}
 	return
 }
+
+//根据类目id查询规则参数是否已经添加
+func catIdService(catid int) (e commons.EgoResult) {
+	p := selByCatIdDao(catid)
+	if p == nil {
+		e.Status = 200
+	}
+	return
+
+}

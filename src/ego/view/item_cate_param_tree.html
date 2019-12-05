@@ -7,12 +7,28 @@
 <body>
 <script type="text/javascript">
     $('#category_tree_tree').tree({
-        url :'/item/param/show',
+        url :'/item/cat/show',
         onClick:function (node) {
+
             if(node.state=="open") {
-                $("#item_add_selectcate_span").html(node.text);
-                $("#item_add_selectcate_hidden").val(node.id);
-                $('#item_add_dialog').dialog("destroy")
+                $.ajax({
+                    url: "/item/param/iscat",
+                    type: 'post',
+                    data: 'catid='+node.id,
+                    success: function (res) {
+                        if (res.Status == '200') {
+                            alert("可以添加");
+                            $("#item_add_selectcate_span").html(node.text);
+                            $("#item_add_selectcate_hidden").val(node.id);
+                            $('#item_add_dialog').dialog("destroy")
+                            return false;
+                        } else {
+                            alert("已经添加了类目");
+                            return false;
+                        }
+                    },
+                });
+
             }
         }
     })

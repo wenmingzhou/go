@@ -57,3 +57,18 @@ func delByIdDao(ids []int) int {
 	}
 	return int(count)
 }
+
+//根据类目id查询规格参数
+func selByCatIdDao(catid int) *TbItemParam {
+	r, err := commons.Dql("select * from tb_item_param where item_cat_id=?", catid)
+	if err != nil {
+		fmt.Println(err)
+		return nil
+	}
+	if r.Next() {
+		param := new(TbItemParam)
+		r.Scan(&param.Id, &param.ItemCatId, &param.ParamData, &param.Created, &param.Updated)
+		return param
+	}
+	return nil
+}

@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="558b9445-6d12-4c28-b8d4-362b16384dc4" name="Default Changelist" comment="商品规格参数删除">
-      <change afterPath="$PROJECT_DIR$/view/ItemParamAdd.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/view/item_cate_param_tree.html" afterDir="false" />
+    <list default="true" id="558b9445-6d12-4c28-b8d4-362b16384dc4" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/item/param/TbItemParamController.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/item/param/TbItemParamController.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/view/showItemParamList.html" beforeDir="false" afterPath="$PROJECT_DIR$/view/showItemParamList.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/item/param/TbItemParamDao.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/item/param/TbItemParamDao.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/item/param/TbItemParamService.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/item/param/TbItemParamService.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/item_cate_param_tree.html" beforeDir="false" afterPath="$PROJECT_DIR$/view/item_cate_param_tree.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../github.com/BurntSushi/toml" beforeDir="false" afterPath="$PROJECT_DIR$/../github.com/BurntSushi/toml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../github.com/CloudyKit/jet" beforeDir="false" afterPath="$PROJECT_DIR$/../github.com/CloudyKit/jet" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../github.com/Joker/jade" beforeDir="false" afterPath="$PROJECT_DIR$/../github.com/Joker/jade" afterDir="false" />
