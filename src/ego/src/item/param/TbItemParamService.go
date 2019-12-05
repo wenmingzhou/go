@@ -3,15 +3,14 @@ package param
 import (
 	"ego/src/commons"
 	"ego/src/item/cat"
-	"fmt"
+	"strconv"
+	"strings"
 )
 
 //显示规则参数
 func showParamService(page, rows int) (e commons.Datagrid) {
-
 	t := selByPageDao(page, rows)
 	e.Count = selCountDao()
-	fmt.Println(e.Count)
 	cats := make([]TbItemParamCat, 0)
 	for i := 0; i < len(t); i++ {
 		var catItem TbItemParamCat
@@ -24,5 +23,20 @@ func showParamService(page, rows int) (e commons.Datagrid) {
 		cats = append(cats, catItem)
 	}
 	e.Data = cats
+	return
+}
+
+//删除规格参数
+func delByIdsService(ids string) (e commons.EgoResult) {
+	idsStr := strings.Split(ids, ",")
+	idInt := make([]int, 0)
+	for _, n := range idsStr {
+		id, _ := strconv.Atoi(n)
+		idInt = append(idInt, id)
+	}
+	count := delByIdDao(idInt)
+	if count > 0 {
+		e.Status = 200
+	}
 	return
 }

@@ -3,6 +3,7 @@ package param
 import (
 	"ego/src/commons"
 	"fmt"
+	"strconv"
 )
 
 func selByPageDao(page, rows int) []TbItemParam {
@@ -36,4 +37,22 @@ func selCountDao() int {
 		return count
 	}
 	return -1
+}
+
+func delByIdDao(ids []int) int {
+	sql := "delete from tb_item_param where id in ("
+	for i := 0; i < len(ids); i++ {
+		sql += strconv.Itoa(ids[i])
+		if i < len(ids)-1 {
+			sql += ","
+		}
+	}
+	sql += ")"
+	fmt.Println(sql)
+	count, err := commons.Dml(sql)
+	if err != nil {
+		fmt.Println(err)
+		return -1
+	}
+	return int(count)
 }
