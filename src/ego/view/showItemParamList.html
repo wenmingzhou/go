@@ -20,7 +20,7 @@
           <span class="layui-breadcrumb">
             <a href="">首页</a>
             <a>
-              <cite>商品列表</cite></a>
+              <cite>商品规则参数</cite></a>
           </span>
           <a class="layui-btn layui-btn-small" style="line-height:1.6em;margin-top:3px;float:right" onclick="location.reload()" title="刷新">
             <i class="layui-icon layui-icon-refresh" style="line-height:30px"></i></a>
@@ -29,6 +29,9 @@
             <div class="layui-row layui-col-space15">
                 <div class="layui-col-md12">
                     <div class="layui-card">
+                        <div class="layui-card-header">
+                            <button class="layui-btn" onclick="/"><i class="layui-icon"></i>添加</button>
+                        </div>
                         <div class="layui-card-body layui-table-body layui-table-main">
                             <table class="layui-hide" id="test"></table>
                         </div>
@@ -43,26 +46,20 @@
             var table = layui.table;
             table.render({
                 elem: '#test'
-                ,url:'/showItem'
+                ,url:'/item/param/show'
                 ,page: true
                 ,cellMinWidth: 80 //全局定义常规单元格的最小宽度，layui 2.2.1 新增
                 ,cols: [[
-                    {field:'Id', width:80, title: 'ID', sort: true}
-                    ,{field:'Title', width:80, title: '商品名称'}
-                    ,{field:'CategoryName', width:80, title: '分类名称'}
-                    ,{field:'SellPoint', width:80, title: '卖点', sort: true}
-                    ,{field:'Price', width:80, title: '价格'}
-                    ,{field:'Num', title: '库存', width: '10%', minWidth: 100} //minWidth：局部定义当前单元格的最小宽度，layui 2.2.1 新增
-                    ,{field:'Image', title: '图片', sort: true}
-                    ,{field:'Cid', title: '分类'}
-                    ,{field:'Status', width:137, title: '状态', sort: true}
-                    ,{field:'Created', width:200, title: '创建时间', sort: true}
+                    {field:'id', width:80, title: 'ID', sort: true}
+                    ,{field:'item_cat_id', width:120, title: '商品类目ID'}
+                    ,{field:'cat_name', width:180, title: '商品类目'}
+                    ,{field:'param_data', width:180, title: '规格(只显示分组名称)', sort: true}
+                    ,{field:'created', width:200, title: '创建时间', sort: true}
+                    ,{field:'updated', width:200, title: '更新时间', sort: true}
                     ,{field: 'operate', title: '操作', width:250, templet:function(d)
                         {
                             var html = '';
                             html += '&nbsp;&nbsp;<a target="_blank" href="/page/editItem?id='+d.Id+'" class="layui-table-link" style="cursor: pointer;" data-rowid="'+d.Id+'">编辑</a>';
-                            html += '&nbsp;&nbsp;<span class="layui-table-link inStock" style="cursor: pointer;" data-rowid="'+d.Id+'">上架</span>';
-                            html += '&nbsp;&nbsp;<span class="layui-table-link outStock" style="cursor: pointer;" data-rowid="'+d.Id+'">下架</span>';
                             html += '&nbsp;&nbsp;<span class="layui-table-link deleteData" style="cursor: pointer;" data-rowid="'+d.Id+'">删除</span>';return html;
                         }
                     }
@@ -78,7 +75,7 @@
         $('body').on('click', '.deleteData',function(){
               var id = $(this).data('rowid');
             $.ajax({
-                url: "/item/delete",
+                url: "/item/param/delete",
                 type: 'get',
                 data: 'id='+id,
                 success: function (res) {

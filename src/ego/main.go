@@ -4,6 +4,7 @@ import (
 	"ego/src/commons"
 	"ego/src/item"
 	"ego/src/item/cat"
+	"ego/src/item/param"
 	"ego/src/user"
 	"fmt"
 	"github.com/gorilla/mux"
@@ -49,6 +50,7 @@ func main() {
 	user.UserHandler()   //调用所用user模块的handler
 	item.ItemHandler()   //商品
 	cat.ItemCatHandler() //分类
+	param.ParamHandler() //规格参数
 	http.ListenAndServe(":9999", commons.Router)
 
 }
