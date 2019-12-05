@@ -103,3 +103,9 @@ func SelByIdDao(id int) *Tbitem {
 		return nil
 	}
 }
+
+//带有事务的更新商品表数据
+func updateByIdWithTx(t Tbitem) int {
+	return commons.PrepareWithTx("update tb_item set title=?,sell_point=?,price=?,num=?,image=?,cid=?,updated=? where id=?",
+		t.Title, t.SellPoint, t.Price, t.Num, t.Image, t.Cid, t.Updated, t.Id)
+}

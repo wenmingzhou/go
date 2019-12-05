@@ -99,7 +99,6 @@
 
     <script type="text/javascript">
         var search_str =window.location.search;
-
         var tt= search_str.split('=');
         var id =tt[1];
         $.ajax({
@@ -112,8 +111,8 @@
                 $("#price").val(res.Price);
                 $("#num").val(res.Num);
                 $("#image").val(res.Image);
-
-                $("#item_add_selectcate_span").val(res.CategoryName);
+                $("#item_add_selectcate_hidden").val(res.Cid)
+                $("#item_add_selectcate_span").html(res.CategoryName);
                 $("#desc").val(res.Desc);
                 var itemUpdateImageV ="";
                 var itemUpdateImgArr =res.Image.split(",");
@@ -143,7 +142,10 @@
 
         })
         $(".layui-btn").click(function () {
-            var cid      =$("#item_add_selectcate_hidden").val();
+            var search_str =window.location.search;
+            var tt= search_str.split('=');
+            var id =tt[1];
+            var cid         =$("#item_add_selectcate_hidden").val();
             var title       =$("#title").val();
             var sell_point  =$("#sell_point").val();
             var price       =$("#price").val();
@@ -151,16 +153,16 @@
             var num         =$("#num").val();
             var desc        =$("#desc").val();
             $.ajax({
-                url: "/item/add",
+                url: "/item/update",
                 type: 'post',
                 data: 'cid='+cid+'&title='+title+'&sell_point='+sell_point+'&sell_point='+sell_point+'&price='+price
-                    +'&image='+image+'&num='+num+'&desc='+desc,
+                    +'&image='+image+'&num='+num+'&desc='+desc+'&id='+id,
                 success: function (res) {
                     if (res.Status == '200') {
-                        alert("新增成功");
+                        alert("更新成功");
                         return false;
                     } else {
-                        alert("新增失败");
+                        alert("更新失败");
                         return false;
                     }
                 },

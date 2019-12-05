@@ -28,3 +28,9 @@ func selByIdDao(id int) *TbItemDesc {
 		return nil
 	}
 }
+
+//带有事务的更新商品描述数据
+func UpdateByIdWithTx(t TbItemDesc) int {
+	return commons.PrepareWithTx("update tb_item_desc set item_desc=?,updated=? where item_id=?",
+		t.ItemDesc, t.Updated, t.ItemId)
+}

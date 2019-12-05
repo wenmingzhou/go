@@ -153,3 +153,36 @@ func showItemDescCatService(id int) TbItemDescChild {
 	c.Desc = desc.SelByIdService(item.Id).ItemDesc
 	return c
 }
+
+func updateService(v url.Values) (e commons.EgoResult) {
+	commons.OpenConnWithTx()
+	var t Tbitem
+	id, _ := strconv.Atoi(v["id"][0])
+	t.Id = id
+	cid, _ := strconv.Atoi(v["cid"][0])
+	t.Cid = cid
+	t.Title = v["title"][0]
+	price, _ := strconv.Atoi(v["price"][0])
+	t.Price = price
+	num, _ := strconv.Atoi(v["num"][0])
+	t.Num = num
+	t.Image = v["image"][0]
+	t.SellPoint = v["sell_point"][0]
+
+	t.Updated = time.Now().Format("2006-01-02 15:04:05")
+	count := updateByIdWithTx(t)
+	if count > 0 {
+		var itemDesc desc.TbItemDesc
+		itemDesc.ItemId = id
+		itemDesc.ItemDesc = v["desc"][0]
+		itemDesc.Updated = time.Now().Format("2006-01-02 15:04:05")
+		count = desc.UpdateByIdWithTx(itemDesc)
+		if count > 0 {
+			commons.CloseConnWithTx(true)
+			e.Status = 200
+			return
+		}
+	}
+	commons.CloseConnWithTx(false)
+	return
+}
