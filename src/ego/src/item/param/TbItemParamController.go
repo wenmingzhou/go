@@ -3,6 +3,7 @@ package param
 import (
 	"ego/src/commons"
 	"encoding/json"
+	"fmt"
 	"net/http"
 	"strconv"
 )
@@ -10,6 +11,13 @@ import (
 func ParamHandler() {
 	commons.Router.HandleFunc("/item/param/show", showParamController)
 	commons.Router.HandleFunc("/item/param/delete", delParamByIdController)
+	commons.Router.HandleFunc("/item/param/iscat", isCatController)
+}
+
+//删除规格参数
+func isCatController(w http.ResponseWriter, r *http.Request) {
+	id := r.FormValue("id")
+	fmt.Println(id)
 }
 
 //删除规格参数
