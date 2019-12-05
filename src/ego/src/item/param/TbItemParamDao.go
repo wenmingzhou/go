@@ -36,6 +36,7 @@ func selCountDao() int {
 		rows.Scan(&count)
 		return count
 	}
+
 	return -1
 }
 

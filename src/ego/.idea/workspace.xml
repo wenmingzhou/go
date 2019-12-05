@@ -3,10 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="558b9445-6d12-4c28-b8d4-362b16384dc4" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/item/param/TbItemParamController.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/item/param/TbItemParamController.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/item/param/TbItemParamDao.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/item/param/TbItemParamDao.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/item/param/TbItemParamService.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/item/param/TbItemParamService.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/view/showItemParamList.html" beforeDir="false" afterPath="$PROJECT_DIR$/view/showItemParamList.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../github.com/BurntSushi/toml" beforeDir="false" afterPath="$PROJECT_DIR$/../github.com/BurntSushi/toml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../github.com/CloudyKit/jet" beforeDir="false" afterPath="$PROJECT_DIR$/../github.com/CloudyKit/jet" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../github.com/Joker/jade" beforeDir="false" afterPath="$PROJECT_DIR$/../github.com/Joker/jade" afterDir="false" />
@@ -194,6 +191,7 @@
     <MESSAGE value="事务功能" />
     <MESSAGE value="商品修改功能" />
     <MESSAGE value="商品规格参数列表" />
-    <option name="LAST_COMMIT_MESSAGE" value="商品规格参数列表" />
+    <MESSAGE value="商品规格参数删除" />
+    <option name="LAST_COMMIT_MESSAGE" value="商品规格参数删除" />
   </component>
 </project>
