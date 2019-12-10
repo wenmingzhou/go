@@ -3,10 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="558b9445-6d12-4c28-b8d4-362b16384dc4" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/item/param/TbItemParamController.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/item/param/TbItemParamController.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/item/param/TbItemParamDao.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/item/param/TbItemParamDao.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/item/param/TbItemParamService.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/item/param/TbItemParamService.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/view/item_cate_param_tree.html" beforeDir="false" afterPath="$PROJECT_DIR$/view/item_cate_param_tree.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../github.com/BurntSushi/toml" beforeDir="false" afterPath="$PROJECT_DIR$/../github.com/BurntSushi/toml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../github.com/CloudyKit/jet" beforeDir="false" afterPath="$PROJECT_DIR$/../github.com/CloudyKit/jet" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../github.com/Joker/jade" beforeDir="false" afterPath="$PROJECT_DIR$/../github.com/Joker/jade" afterDir="false" />
@@ -66,7 +62,7 @@
     <property name="configurable.Project.GOPATH.is.expanded" value="true" />
     <property name="go.gopath.indexing.explicitly.defined" value="true" />
     <property name="go.import.settings.migrated" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/view" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -195,6 +191,7 @@
     <MESSAGE value="商品修改功能" />
     <MESSAGE value="商品规格参数列表" />
     <MESSAGE value="商品规格参数删除" />
-    <option name="LAST_COMMIT_MESSAGE" value="商品规格参数删除" />
+    <MESSAGE value="商品规格参数添加" />
+    <option name="LAST_COMMIT_MESSAGE" value="商品规格参数添加" />
   </component>
 </project>
