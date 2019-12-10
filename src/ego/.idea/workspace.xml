@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="558b9445-6d12-4c28-b8d4-362b16384dc4" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../github.com/BurntSushi/toml" beforeDir="false" afterPath="$PROJECT_DIR$/../github.com/BurntSushi/toml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../github.com/CloudyKit/jet" beforeDir="false" afterPath="$PROJECT_DIR$/../github.com/CloudyKit/jet" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../github.com/Joker/jade" beforeDir="false" afterPath="$PROJECT_DIR$/../github.com/Joker/jade" afterDir="false" />
@@ -74,15 +73,16 @@
     <property name="settings.editor.selected.configurable" value="watcher.settings" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\go\src\ego" />
+      <recent name="D:\go\src\ego\view" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\go\src\ego\src" />
       <recent name="D:\go\src\ego\view" />
       <recent name="D:\go\src\ego\static" />
       <recent name="D:\go\src\ego\static\easyui\js" />
       <recent name="D:\go\src\ego\static\easyui\css" />
-      <recent name="D:\go\src\ego\view\page" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\go\src\ego\view" />
     </key>
   </component>
   <component name="RunDashboard">
