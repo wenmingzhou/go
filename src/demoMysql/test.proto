@@ -1,0 +1,5 @@
+message Order{
+    required int32 order_id =1; //代表字段的顺序
+    optional int64 num =2;
+    optional string timestamp=3;
+}

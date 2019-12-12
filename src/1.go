@@ -32,8 +32,6 @@ func indexjs(w http.ResponseWriter,r *http.Request)  {
 	io.Copy(w,f)
 }
 func main() {
-
-
 	http.HandleFunc(`/`,index)
 	http.HandleFunc(`/1.js`,indexjs)
 	http.HandleFunc(`/first`,first)
