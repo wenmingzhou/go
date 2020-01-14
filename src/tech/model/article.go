@@ -13,6 +13,6 @@ type Article struct {
 
 func ArticleGet(id int64) (Article, error) {
 	mod := Article{}
-	err := DB.Get(&mod, "select * from Article where id =? limit 1", id)
+	err := DB.Unsafe().Get(&mod, "select * from Article where id =? limit 1", id)
 	return mod, err
 }
