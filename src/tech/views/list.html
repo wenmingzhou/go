@@ -7,34 +7,31 @@
 <body>
 
 <ul id="ctn">
-    <li><b>标题</b><span>[标题]</span> <b>作者</b><span>[作者]</span><button onclick="del(id)">删除</button></li>
+
 </ul>
 
-<script src="/static/js/jquery.min.js"></script>
-<script type="text/javascript">
 
+<script id="test" type="text/html">
+    <ul>
+        {{each list value i}}
+            <li><b>标题</b><span>[{{value.title}}]</span> <b>作者</b><span>[{{value.author}}]</span><button onclick="del(id)">删除</button>
+        {{/each}}
+    </ul>
+</script>
+<script src="/static/js/jquery.min.js"></script>
+<script src="/static/js/template-web.js"></script>
+<script type="text/javascript">
     function init() {
         $.get("/api/list/data",{},function (resp) {
-            var html =[];
-            $.each(resp,function (k,v) {
-                html.push('<li>'+(v.id)+'<b>标题</b><span>['+v.title+']</span> <b>作者</b><span>['+v.author+']</span><button onclick="del('+v.id+')">删除</button></li>')
-            })
-
-            /*
-            for(var i=0;i<resp.length;i++){
-                html.push('<li><b>标题</b><span>[标题]</span> <b>作者</b><span>[作者]</span></li>')
+            var data ={
+                list:resp
             }
-            */
-            $("#ctn").html(html.join(""))
+            var html =template("test",data);
+            console.log(html);
+            document.getElementById('ctn').innerHTML = html;
         },"json")
     }
 
-    function del(id){
-        $.get("/api/list/del",{id:id},function (resp) {
-            alert("删除成功")
-            init()
-        })
-    }
     init()
 </script>
 </body>
