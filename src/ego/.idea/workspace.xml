@@ -2,6 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="558b9445-6d12-4c28-b8d4-362b16384dc4" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../superstar/_demo/iris/hello.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../superstar/_demo/iris/mainlris.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../tech/model/article.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../tech/model/model.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../tech/veiws/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../github.com/BurntSushi/toml" beforeDir="false" afterPath="$PROJECT_DIR$/../github.com/BurntSushi/toml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../github.com/CloudyKit/jet" beforeDir="false" afterPath="$PROJECT_DIR$/../github.com/CloudyKit/jet" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../github.com/Joker/jade" beforeDir="false" afterPath="$PROJECT_DIR$/../github.com/Joker/jade" afterDir="false" />
@@ -28,6 +34,7 @@
       <change beforePath="$PROJECT_DIR$/../github.com/ryanuber/columnize" beforeDir="false" afterPath="$PROJECT_DIR$/../github.com/ryanuber/columnize" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../github.com/shurcooL/sanitized_anchor_name" beforeDir="false" afterPath="$PROJECT_DIR$/../github.com/shurcooL/sanitized_anchor_name" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../gopkg.in/yaml.v2" beforeDir="false" afterPath="$PROJECT_DIR$/../gopkg.in/yaml.v2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tech/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/../tech/main.go" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />

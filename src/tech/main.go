@@ -1,9 +1,20 @@
 package main
 
 import (
-	"tech/router"
+	"io"
+	"net/http"
+	"os"
 )
 
 func main() {
-	router.Run()
+
+	http.HandleFunc("/", IndexView)
+	http.ListenAndServe(":8090", nil)
+}
+
+func IndexView(w http.ResponseWriter, r *http.Request) {
+	f, _ := os.Open("./views/index.html")
+	io.Copy(w, f)
+	f.Close()
+
 }
