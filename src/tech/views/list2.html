@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>list</title>
+</head>
+<body>
+
+<ul id="ctn">
+    <li><b>标题</b><span>[标题]</span> <b>作者</b><span>[作者]</span><button onclick="del(id)">删除</button></li>
+</ul>
+
+<script src="/static/js/jquery.min.js"></script>
+<script type="text/javascript">
+
+    function init() {
+        $.get("/api/list/data",{},function (resp) {
+            var html =[];
+            $.each(resp,function (k,v) {
+                html.push('<li>'+(v.id)+'<b>标题</b><span>['+v.title+']</span> <b>作者</b><span>['+v.author+']</span><button onclick="del('+v.id+')">删除</button></li>')
+            })
+
+            /*
+            for(var i=0;i<resp.length;i++){
+                html.push('<li><b>标题</b><span>[标题]</span> <b>作者</b><span>[作者]</span></li>')
+            }
+            */
+            $("#ctn").html(html.join(""))
+        },"json")
+    }
+
+    function del(id){
+        $.get("/api/list/del",{id:id},function (resp) {
+            alert("删除成功")
+            init()
+        })
+    }
+    init()
+</script>
+</body>
+</html>
