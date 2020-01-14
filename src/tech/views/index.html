@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>index</title>
 </head>
 <body>
     <input type="text" id="id" value="1">
@@ -19,7 +19,7 @@
             var id =$("#id").val();
             $.get("/api/index/data",{id:id},function () {
                 
-            })
+            },"json")
         })
     </script>
 
