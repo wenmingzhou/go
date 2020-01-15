@@ -11,6 +11,8 @@ func main() {
 	http.HandleFunc("/", control.IndexView)
 	http.HandleFunc("/api/index/data", control.IndexData)
 
+	http.HandleFunc("/detail", control.DetailView)
+
 	http.HandleFunc("/list", control.ListView)
 	http.HandleFunc("/api/list/data", control.ListData)
 
@@ -18,6 +20,8 @@ func main() {
 
 	http.HandleFunc("/add", control.ArticleAddView)
 	http.HandleFunc("/api/article/add", control.ApiArticleAdd)
+
+	http.HandleFunc("/api/upload", control.ApiUpload)
 
 	http.ListenAndServe(":8090", nil)
 }

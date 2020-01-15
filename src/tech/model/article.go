@@ -19,7 +19,7 @@ func ArticleGet(id int64) (Article, error) {
 
 func ArticleList() ([]Article, error) {
 	mods := make([]Article, 0, 10)
-	err := DB.Unsafe().Select(&mods, "select * from Article limit 10")
+	err := DB.Unsafe().Select(&mods, "select * from Article order by id desc limit 10")
 	return mods, err
 }
 

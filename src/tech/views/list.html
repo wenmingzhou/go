@@ -16,7 +16,7 @@
 <script id="test" type="text/html">
     <ul>
         {{each list value i}}
-            <li><b>标题</b><span>[{{value.title}}]</span> <b>作者</b><span>[{{value.author}}]</span><button onclick="del({{value.id}})">删除</button>
+        <li><b>标题</b><span>[{{value.title}}]</span> <b>作者</b><span>[{{value.author}}]</span><a href="/detail?id={{value.id}}">查看</a><button onclick="del({{value.id}})">删除</button>
         {{/each}}
     </ul>
 </script>
