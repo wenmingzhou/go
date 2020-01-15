@@ -7,7 +7,7 @@ type Article struct {
 	Title   string    `json:"title"`
 	Author  string    `json:"author"`
 	Content string    `json:"content"`
-	Hits    string    `json:"hits"`
+	Hits    int       `json:"hits"`
 	Utime   time.Time `json:"utime"`
 }
 
@@ -35,4 +35,10 @@ func ArticleDel(id int64) bool {
 		return false
 	}
 
+}
+
+func ArticleAdd(mod *Article) error {
+	_, err := DB.Exec("insert into article (title,author,content,hits,utime) values (?,?,?,?,?) ",
+		mod.Title, mod.Author, mod.Content, mod.Hits, mod.Utime)
+	return err
 }

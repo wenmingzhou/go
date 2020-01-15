@@ -5,8 +5,8 @@ import (
 	"tech/control"
 )
 
-func Run(){
-	app :=echo.New()
-	app.GET("/",control.Index)
+func Run() {
+	app := echo.New()
+	app.GET("/", control.Index)
 	app.Start(":8080")
 }
