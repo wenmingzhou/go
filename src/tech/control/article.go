@@ -31,8 +31,7 @@ func ListData(w http.ResponseWriter, r *http.Request) {
 		Fail(w, err.Error())
 		return
 	}
-	buf, _ := json.Marshal(mods)
-	w.Write(buf)
+	Succ(w, "列表", mods)
 }
 
 func IndexData(w http.ResponseWriter, r *http.Request) {
@@ -61,10 +60,34 @@ func ListDel(w http.ResponseWriter, r *http.Request) {
 	}
 }
 
-func Succ(w http.ResponseWriter, msg string) {
-	w.Write([]byte(msg))
+func Succ(w http.ResponseWriter, msg string, data ...interface{}) {
+	mod := Reply{
+		Code: 200,
+		Msg:  msg,
+	}
+	if len(data) > 0 {
+		mod.Data = data[0]
+	}
+	buf, _ := json.Marshal(mod)
+	w.Header().Set("Content-Type", "application/json")
+	w.Write(buf)
 }
 
-func Fail(w http.ResponseWriter, msg string) {
-	w.Write([]byte(msg))
+func Fail(w http.ResponseWriter, msg string, data ...interface{}) {
+	mod := Reply{
+		Code: 300,
+		Msg:  msg,
+	}
+	if len(data) > 0 {
+		mod.Data = data[0]
+	}
+	buf, _ := json.Marshal(mod)
+	w.Header().Set("Content-Type", "application/json")
+	w.Write(buf)
+}
+
+type Reply struct {
+	Code int         `json:"code"` //200 成功 300 失败 310 输入有误 320 输出有误
+	Msg  string      `json:"msg"`  //用户提示
+	Data interface{} `json:"data"` //返回数据
 }
