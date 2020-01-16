@@ -42,3 +42,9 @@ func ArticleAdd(mod *Article) error {
 		mod.Title, mod.Author, mod.Content, mod.Hits, mod.Utime)
 	return err
 }
+
+func ArticleEdit(mod *Article) error {
+	_, err := DB.Exec("update article set title=?,author=?,content=?,hits=? where id=? ",
+		mod.Title, mod.Author, mod.Content, mod.Hits, mod.Id)
+	return err
+}

@@ -30,6 +30,26 @@ func ApiArticleAdd(w http.ResponseWriter, r *http.Request) {
 	return
 }
 
+func ApiArticleEdit(w http.ResponseWriter, r *http.Request) {
+
+	mod := &model.Article{}
+	//err := json.NewDecoder(r.Body).Decode(mod)
+	buf, _ := ioutil.ReadAll(r.Body)
+	err := json.Unmarshal(buf, mod)
+	if err != nil {
+		Fail(w, "数据有误"+err.Error())
+		return
+	}
+
+	err = model.ArticleEdit(mod)
+	if err != nil {
+		Fail(w, "编辑失败"+err.Error())
+		return
+	}
+	Succ(w, "编辑成功")
+	return
+}
+
 /*func ApiArticleAdd(w http.ResponseWriter, r *http.Request) {
 	r.ParseForm()
 	mod := &model.Article{}

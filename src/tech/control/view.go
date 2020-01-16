@@ -20,6 +20,13 @@ func DetailView(w http.ResponseWriter, r *http.Request) {
 
 }
 
+func EditView(w http.ResponseWriter, r *http.Request) {
+	f, _ := os.Open("./views/edit.html")
+	io.Copy(w, f)
+	f.Close()
+
+}
+
 func ListView(w http.ResponseWriter, r *http.Request) {
 	f, _ := os.Open("./views/list.html")
 	io.Copy(w, f)
