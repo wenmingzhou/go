@@ -124,23 +124,14 @@
             var author =$("#author").val();
             var content =UM.getEditor('content').getContent();
             var hits =$("#hits").val();
+            $.post("/api/article/add",{
+                title:title,
+                author:author,
+                content:content,
+                hits:hits,
+            },function (resp) {
 
-
-            $.ajax({
-                url :"/api/article/add",
-                type :"post",
-                data :JSON.stringify({
-                    title:title,
-                    author:author,
-                    content:content,
-                    hits:Number(hits),
-                }),
-                contentType :"application/json",    //客户端发送给服务端的数据类型
-                dataType:"json",                    //服务端发送给客户端的数据类型
-                complete:function (resp) {
-                    console.log(resp)
-                }
-            })
+            },"json")
         }
     </script>
 </body>

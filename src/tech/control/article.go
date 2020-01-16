@@ -9,6 +9,25 @@ import (
 )
 
 func ApiArticleAdd(w http.ResponseWriter, r *http.Request) {
+
+	mod := &model.Article{}
+	err := json.NewDecoder(r.Body).Decode(mod)
+	if err != nil {
+		Fail(w, "数据有误"+err.Error())
+		return
+	}
+
+	mod.Utime = time.Now()
+	err = model.ArticleAdd(mod)
+	if err != nil {
+		Fail(w, "添加失败"+err.Error())
+		return
+	}
+	Succ(w, "添加成功")
+	return
+}
+
+/*func ApiArticleAdd(w http.ResponseWriter, r *http.Request) {
 	r.ParseForm()
 	mod := &model.Article{}
 	mod.Title = r.Form.Get("title")
@@ -23,7 +42,7 @@ func ApiArticleAdd(w http.ResponseWriter, r *http.Request) {
 	}
 	Succ(w, "添加成功")
 	return
-}
+}*/
 
 func ListData(w http.ResponseWriter, r *http.Request) {
 	mods, err := model.ArticleList()
