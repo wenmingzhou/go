@@ -23,6 +23,18 @@ func ArticleList() ([]Article, error) {
 	return mods, err
 }
 
+func ArticlePage(pi int, ps int) ([]Article, error) {
+	mods := make([]Article, 0, 10)
+	err := DB.Unsafe().Select(&mods, "select * from Article order by id desc limit ?,?", (pi-1)*ps, ps)
+	return mods, err
+}
+
+func ArticlePageCount() int {
+	count := 0
+	DB.Get(&count, "select count(*) as count from article")
+	return count
+}
+
 func ArticleDel(id int64) bool {
 	res, _ := DB.Exec("delete from Article where id= ?", id)
 	if res == nil {

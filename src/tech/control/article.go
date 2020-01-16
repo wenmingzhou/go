@@ -9,6 +9,17 @@ import (
 	"time"
 )
 
+type Reply struct {
+	Code int         `json:"code"` //200 成功 300 失败 310 输入有误 320 输出有误
+	Msg  string      `json:"msg"`  //用户提示
+	Data interface{} `json:"data"` //返回数据
+}
+
+type Ext struct {
+	Count int         `json:"count"`
+	Items interface{} `json:"items"`
+}
+
 func ApiArticleAdd(w http.ResponseWriter, r *http.Request) {
 
 	mod := &model.Article{}
@@ -76,6 +87,26 @@ func ListData(w http.ResponseWriter, r *http.Request) {
 	Succ(w, "列表", mods)
 }
 
+func ApiListPage(w http.ResponseWriter, r *http.Request) {
+	r.ParseForm()
+	pi, _ := strconv.Atoi(r.Form.Get("pi"))
+	ps, _ := strconv.Atoi(r.Form.Get("ps"))
+
+	count := model.ArticlePageCount()
+	if count < 1 {
+		Fail(w, "未查询数据", "count < 1")
+	}
+	mods, _ := model.ArticlePage(pi, ps)
+	if len(mods) < 1 {
+		Fail(w, "未查询数据", "len(mods) < 1")
+	}
+	ext := Ext{
+		Count: count,
+		Items: mods,
+	}
+	Succ(w, "分页数据", ext)
+}
+
 func IndexData(w http.ResponseWriter, r *http.Request) {
 	r.ParseForm()
 	idstr := r.Form.Get("id")
@@ -126,10 +157,4 @@ func Fail(w http.ResponseWriter, msg string, data ...interface{}) {
 	buf, _ := json.Marshal(mod)
 	w.Header().Set("Content-Type", "application/json")
 	w.Write(buf)
-}
-
-type Reply struct {
-	Code int         `json:"code"` //200 成功 300 失败 310 输入有误 320 输出有误
-	Msg  string      `json:"msg"`  //用户提示
-	Data interface{} `json:"data"` //返回数据
 }

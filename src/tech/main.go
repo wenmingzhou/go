@@ -16,6 +16,8 @@ func main() {
 	http.HandleFunc("/edit", control.EditView)
 	http.HandleFunc("/api/article/edit", control.ApiArticleEdit)
 
+	http.HandleFunc("/api/article/page", control.ApiListPage)
+
 	http.HandleFunc("/list", control.ListView)
 	http.HandleFunc("/api/list/data", control.ListData)
 
