@@ -2,6 +2,7 @@ package control
 
 import (
 	"encoding/json"
+	"io/ioutil"
 	"net/http"
 	"strconv"
 	"tech/model"
@@ -11,7 +12,9 @@ import (
 func ApiArticleAdd(w http.ResponseWriter, r *http.Request) {
 
 	mod := &model.Article{}
-	err := json.NewDecoder(r.Body).Decode(mod)
+	//err := json.NewDecoder(r.Body).Decode(mod)
+	buf, _ := ioutil.ReadAll(r.Body)
+	err := json.Unmarshal(buf, mod)
 	if err != nil {
 		Fail(w, "数据有误"+err.Error())
 		return
