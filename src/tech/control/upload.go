@@ -3,15 +3,37 @@ package control
 import (
 	"encoding/json"
 	"io"
+	"math/rand"
 	"net/http"
 	"os"
+	"path"
+	"time"
 )
 
-type Upload struct {
+var all = "QWERTYUIOPASDFGHJKLZXCVBNM1234567890"
+
+type editUpload struct {
 	Original string `json:"original"`
 	State    string `json:"state"`
 	Title    string `json:"title"`
 	Url      string `json:"url"`
+}
+
+//传指针8个字节     //非指针    len cap point (8+8+8)*4 96字节
+func (er *editUpload) json() []byte {
+	buf, _ := json.Marshal(er)
+	return buf
+}
+
+//构建随机字符串
+func RandStr(ln int) string {
+	res := ""
+	rand.Seed(time.Now().UnixNano())
+	for i := 0; i < ln; i++ {
+		res += string(all[rand.Intn(36)])
+	}
+	return res
+
 }
 
 func ApiUpload(w http.ResponseWriter, r *http.Request) {
@@ -24,20 +46,29 @@ func ApiUpload(w http.ResponseWriter, r *http.Request) {
 	}
 	//log.Println(f, h, err)
 	os.MkdirAll("static/upload/", 0666)
-	name := "static/upload/" + h.Filename
+	ext := path.Ext(h.Filename)
+	name := "static/upload/" + RandStr(10) + ext
 	dst, _ := os.Create(name)
 	io.Copy(dst, f)
 	f.Close()
 	dst.Close()
 	w.Header().Set("Content-Type", "application/json")
 
-	mod := Upload{
+	mod := editUpload{
 		Original: h.Filename,
 		State:    "SUCCESS",
 		Title:    h.Filename,
 		Url:      name,
 	}
-
-	buf, _ := json.Marshal(mod)
-	w.Write(buf)
+	w.Write(mod.json())
+	/*
+		mod := editUpload{
+			Original: h.Filename,
+			State:    "SUCCESS",
+			Title:    h.Filename,
+			Url:      name,
+		}
+		buf, _ := json.Marshal(mod)
+		w.Write(buf)
+	*/
 }
