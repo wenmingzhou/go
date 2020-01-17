@@ -35,21 +35,21 @@
 <div class="layui-container">
     <div class="admin-login-background">
         <div class="layui-form login-form">
-            <form class="layui-form" action="#">
+            <form class="layui-form">
                 <div class="layui-form-item logo-title">
                     <h1>LayuiMini后台登录</h1>
                 </div>
                 <div class="layui-form-item">
                     <label class="layui-icon layui-icon-username" for="username"></label>
-                    <input type="text" name="username" lay-verify="required|account" placeholder="用户名或者邮箱" autocomplete="off" class="layui-input" value="admin">
+                    <input type="text" name="num" lay-verify="required|account" placeholder="用户名或者邮箱" autocomplete="off" class="layui-input">
                 </div>
                 <div class="layui-form-item">
                     <label class="layui-icon layui-icon-password" for="password"></label>
-                    <input type="password" name="password" lay-verify="required|password" placeholder="密码" autocomplete="off" class="layui-input" value="123456">
+                    <input type="password" name="pass" lay-verify="required|password" placeholder="密码" autocomplete="off" class="layui-input">
                 </div>
                 
                 <div class="layui-form-item">
-                    <button class="layui-btn layui-btn-fluid" lay-submit="" lay-filter="login" type="button">登 入</button>
+                    <button class="layui-btn layui-btn-fluid" lay-submit="" lay-filter="login">登 入</button>
                 </div>
             </form>
         </div>
@@ -62,7 +62,7 @@
     layui.use(['form'], function () {
         var form = layui.form,
             layer = layui.layer;
-
+            $ =layui.jquery;
         // 登录过期的时候，跳出ifram框架
         if (top.location != self.location) top.location = self.location;
 
@@ -70,24 +70,44 @@
 
         // 进行登录操作
         form.on('submit(login)', function (data) {
-            alert("ddd");
-            return false;
-            data = data.field;
-            if (data.username == '') {
+            var dataFiled = data.field;
+            if (dataFiled.num == '') {
                 layer.msg('用户名不能为空');
                 return false;
             }
-            if (data.password == '') {
+            if (dataFiled.pass == '') {
                 layer.msg('密码不能为空');
                 return false;
             }
-            if (data.captcha == '') {
-                layer.msg('验证码不能为空');
-                return false;
-            }
-            layer.msg('登录成功', function () {
-                window.location = '/index.html';
-            });
+
+            $.ajax({
+                url :"/api/login",
+                type:"post",
+                data :JSON.stringify(data.field),
+                contentType:"application/json",
+                dataType:"json",
+                success:function (resp) {
+                    if(resp.code==200){
+                      location.href ="/views/index.html";
+                    }else{
+                        layer.msg(resp.msg)
+                    }
+                    return false;
+
+                }
+            })
+            /*$.ajax({
+                url :"/api/login",
+                type:"post",
+                data :{num:dataFiled.num,pass:dataFiled.pass},
+                dataType:"json",
+                complete:function (resp) {
+                    layer.msg('登录成功', function () {
+                        //window.location = '/index.html';
+                    });
+                }
+            })*/
+
             return false;
         });
     });
