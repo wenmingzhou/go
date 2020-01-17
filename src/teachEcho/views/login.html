@@ -89,7 +89,8 @@
                 dataType:"json",
                 success:function (resp) {
                     if(resp.code==200){
-                      //location.href ="/views/index.html";
+                        localStorage.setItem("token",resp.data);
+                        location.href ="/views/index.html";
                     }else{
                         layer.msg(resp.msg)
                     }

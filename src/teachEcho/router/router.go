@@ -18,7 +18,10 @@ func Run() {
 
 	app.GET("/login.html", control.LoginView)
 
-	app.POST("/api/login", control.UserLogon)
+	//路由分组
+	admin := app.Group("/admin", ServerHeader)
+	admin.GET("/index.html", control.AdminIndexView)
 
+	app.POST("/api/login", control.UserLogon)
 	app.Start(":8021")
 }

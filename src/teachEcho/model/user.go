@@ -1,6 +1,9 @@
 package model
 
-import "time"
+import (
+	"github.com/dgrijalva/jwt-go"
+	"time"
+)
 
 //user 表
 type User struct {
@@ -19,4 +22,12 @@ func UserLogin(num string) (User, error) {
 	mod := User{}
 	err := DB.Get(&mod, "select * from user where num=? limit 1", num)
 	return mod, err
+}
+
+//token 要携带的数据
+type UserClaims struct {
+	Id   int    `json:"id"`
+	Num  string `json:"num"`
+	Name string `json:"name"`
+	jwt.StandardClaims
 }
