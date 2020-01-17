@@ -1,27 +1,13 @@
 package main
 
-import (
-	"github.com/labstack/echo"
-	"github.com/labstack/echo/middleware"
-	"net/http"
-)
+import "teachEcho/router"
 
 func main() {
 	// Echo instance
-	e := echo.New()
-
-	// Middleware
-	e.Use(middleware.Logger())
-	e.Use(middleware.Recover())
-
-	// Routes
-	e.GET("/", hello)
-
-	// Start server
-	e.Logger.Fatal(e.Start(":8021"))
-}
-
-// Handler
-func hello(c echo.Context) error {
-	return c.String(http.StatusOK, "Hello, World!")
+	/*e := echo.New()
+	e.GET("/", func(c echo.Context) error {
+		return c.String(http.StatusOK, "Hello, World!")
+	})
+	e.Logger.Fatal(e.Start(":8021"))*/
+	router.Run()
 }
