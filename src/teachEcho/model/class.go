@@ -1,6 +1,8 @@
 package model
 
-import "errors"
+import (
+	"errors"
+)
 
 type Class struct {
 	Id   int64  `json:"id"`
@@ -57,6 +59,26 @@ func ClassAdd(mod *Class) error {
 }
 
 //修改
+//添加
+func ClassEdit(mod *Class) error {
+	tx, err := DB.Begin()
+	if err != nil {
+		return err
+	}
+	res, err := tx.Exec("update  class set `name`=?,`desc`=? where id=?", mod.Name, mod.Desc, mod.Id)
+	if err != nil {
+		tx.Rollback()
+		return err
+	}
+	rows, _ := res.RowsAffected()
+	if rows < 1 {
+		tx.Rollback()
+		return errors.New("rows affected <1 ")
+	}
+	tx.Commit()
+	return nil
+}
+
 //删除
 
 func ClassDrop(id int64) error {

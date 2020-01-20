@@ -31,7 +31,7 @@
                 , {
                     field: 'operate', title: '操作', width: '350', templet: function (d) {
                         var html = '';
-                        html += '&nbsp;&nbsp;<a href="/adm/class/edit?id=' + d.id + '" target="_blank" class="layui-table-link">编辑</a>';
+                        html += '&nbsp;&nbsp;<a href="/views/class-edit.html?id=' + d.id + '" target="_blank" class="layui-table-link">编辑</a>';
                         html += '&nbsp;&nbsp;<span class="layui-table-link drop" style="cursor: pointer;" data-rowid="' + d.id + '">删除</span>';
                         return html;
                     }

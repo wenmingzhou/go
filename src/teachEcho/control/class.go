@@ -69,3 +69,30 @@ func ClassDrop(ctx echo.Context) error {
 	return ctx.JSON(utils.Succ("删除成功"))
 
 }
+
+func ClassGet(ctx echo.Context) error {
+	id, err := strconv.ParseInt(ctx.Param("id"), 10, 64)
+	if err != nil {
+		return ctx.JSON(utils.ErrIpt("输入数据有误", err.Error()))
+	}
+	mod, err := model.ClassGet(id)
+	if err != nil {
+		return ctx.JSON(utils.Fail("没有数据", err.Error()))
+	}
+	return ctx.JSON(utils.Succ("获取成功", mod))
+
+}
+
+func ClassEdit(ctx echo.Context) error {
+	ipt := &model.Class{}
+	err := ctx.Bind(ipt)
+	if err != nil {
+		return ctx.JSON(utils.ErrIpt("输入数据有误", err.Error()))
+	}
+	err = model.ClassEdit(ipt)
+	if err != nil {
+		return ctx.JSON(utils.Fail("修改失败", err.Error()))
+	}
+	return ctx.JSON(utils.Succ("修改成功"))
+
+}
