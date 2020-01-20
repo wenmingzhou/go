@@ -46,7 +46,7 @@ func ServerHeader(next echo.HandlerFunc) echo.HandlerFunc {
 			//验证通过
 			return next(ctx)
 		} else {
-			return ctx.JSON(utils.ErrJwt("验证失败"))
+			return ctx.JSON(utils.ErrJwt("jwt token 验证失败"))
 		}
 
 	}

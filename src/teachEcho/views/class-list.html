@@ -20,7 +20,7 @@
 <script>
     layui.use('table', function(){
         var table = layui.table;
-
+        var $ =layui.jquery;
         table.render({
             elem: '#test'
             ,url:'/api/class/page'
@@ -28,10 +28,44 @@
                 {field:'id', width:80, title: 'ID', sort: true}
                 ,{field:'name', width:280, title: '名称'}
                 ,{field:'desc', width:280, title: '描述', sort: true}
-
+                , {
+                    field: 'operate', title: '操作', width: '350', templet: function (d) {
+                        var html = '';
+                        html += '&nbsp;&nbsp;<a href="/adm/class/edit?id=' + d.id + '" target="_blank" class="layui-table-link">编辑</a>';
+                        html += '&nbsp;&nbsp;<span class="layui-table-link drop" style="cursor: pointer;" data-rowid="' + d.id + '">删除</span>';
+                        return html;
+                    }
+                }
             ]]
             ,page: true
         });
+
+        //删除指定模板
+        $('body').on('click','.drop',function () {
+
+            var data_rowid = $(this).attr('data-rowid');
+            layer.confirm('确定删除？', function(index) {
+                if (data_rowid) {
+                    $.ajax({
+                        url: '/adm/class/drop/'+data_rowid+'?token='+localStorage.getItem("token"),
+                        type: "GET",
+                        dataType: "json",
+                        success: function (resp) {
+                            if (resp.code == 200) {
+                                layer.msg('删除成功！', {icon: 1, time: 3000});
+                            } else {
+                                layer.msg(resp.msg);
+
+                            }
+                            return false;
+                        }
+                    })
+                } else {
+                    layer.msg('请选择合适的模板！', {icon: 0, time: 1000});
+                    return false;
+                }
+            })
+        })
     });
 </script>
 

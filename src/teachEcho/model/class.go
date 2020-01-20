@@ -1,5 +1,7 @@
 package model
 
+import "errors"
+
 type Class struct {
 	Id   int64  `json:"id"`
 	Name string `json:"name"`
@@ -35,5 +37,43 @@ func ClassGet(id int64) (Class, error) {
 }
 
 //添加
+func ClassAdd(mod *Class) error {
+	tx, err := DB.Begin()
+	if err != nil {
+		return err
+	}
+	res, err := tx.Exec("insert into class (`name`,`desc`) values (?,?)", mod.Name, mod.Desc)
+	if err != nil {
+		tx.Rollback()
+		return err
+	}
+	rows, _ := res.RowsAffected()
+	if rows < 1 {
+		tx.Rollback()
+		return errors.New("rows affected <1 ")
+	}
+	tx.Commit()
+	return nil
+}
+
 //修改
 //删除
+
+func ClassDrop(id int64) error {
+	tx, err := DB.Begin()
+	if err != nil {
+		return err
+	}
+	res, err := tx.Exec("delete from class where  id =? ", id)
+	if err != nil {
+		tx.Rollback()
+		return err
+	}
+	rows, _ := res.RowsAffected()
+	if rows < 1 {
+		tx.Rollback()
+		return errors.New("rows affected <1 ")
+	}
+	tx.Commit()
+	return nil
+}

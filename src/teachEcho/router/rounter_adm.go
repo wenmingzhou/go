@@ -1,7 +1,12 @@
 package router
 
-import "github.com/labstack/echo"
+import (
+	"github.com/labstack/echo"
+	"teachEcho/control"
+)
 
-func AdmRouter(api *echo.Group) {
-
+//必须要token
+func AdmRouter(adm *echo.Group) {
+	adm.POST("/class/add", control.ClassAdd)
+	adm.GET("/class/drop/:id", control.ClassDrop)
 }

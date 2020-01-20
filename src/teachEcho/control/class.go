@@ -40,3 +40,32 @@ func ClassPage(ctx echo.Context) error {
 	}
 	return ctx.JSON(utils.PageLayUi("分类分页数据", mods, count))
 }
+
+func ClassAdd(ctx echo.Context) error {
+	ipt := &model.Class{}
+	err := ctx.Bind(ipt)
+	if err != nil {
+		return ctx.JSON(utils.ErrIpt("输入数据有误", err.Error()))
+	}
+	if ipt.Name == "" {
+		return ctx.JSON(utils.ErrIpt("名称不能为空"))
+	}
+	err = model.ClassAdd(ipt)
+	if err != nil {
+		return ctx.JSON(utils.Fail("添加失败", err.Error()))
+	}
+	return ctx.JSON(utils.Succ("添加成功"))
+}
+
+func ClassDrop(ctx echo.Context) error {
+	id, err := strconv.ParseInt(ctx.Param("id"), 10, 64)
+	if err != nil {
+		return ctx.JSON(utils.ErrIpt("输入数据有误", err.Error()))
+	}
+	err = model.ClassDrop(id)
+	if err != nil {
+		return ctx.JSON(utils.Fail("删除失败", err.Error()))
+	}
+	return ctx.JSON(utils.Succ("删除成功"))
+
+}

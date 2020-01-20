@@ -14,6 +14,10 @@ func init() {
 		fmt.Println("连接数据库失败", err)
 		return
 	}
+	if err = db.Ping(); err != nil {
+		fmt.Println(err.Error())
+		return
+	}
 	DB = db
 
 }
