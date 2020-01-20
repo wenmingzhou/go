@@ -1,0 +1,12 @@
+package router
+
+import (
+	"github.com/labstack/echo"
+	"teachEcho/control"
+)
+
+func ApiRouter(api *echo.Group) {
+	api.POST("/login", control.UserLogon)
+	api.GET("/class/all", control.ClassAll)
+	api.GET("/class/page", control.ClassPage)
+}
