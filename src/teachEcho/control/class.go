@@ -16,14 +16,14 @@ func ClassAll(ctx echo.Context) error {
 }
 
 func ClassPage(ctx echo.Context) error {
-	pi, err := strconv.Atoi(ctx.FormValue("pi"))
+	pi, err := strconv.Atoi(ctx.FormValue("page"))
 	if err != nil {
 		return ctx.JSON(utils.ErrIpt("分页索引错误", err.Error()))
 	}
 	if pi < 1 {
 		return ctx.JSON(utils.ErrIpt("分页索引范围错误", err.Error()))
 	}
-	ps, err := strconv.Atoi(ctx.FormValue("ps"))
+	ps, err := strconv.Atoi(ctx.FormValue("limit"))
 	if err != nil {
 		return ctx.JSON(utils.ErrIpt("分页大小错误", err.Error()))
 	}
@@ -34,10 +34,9 @@ func ClassPage(ctx echo.Context) error {
 	if count < 1 {
 		return ctx.JSON(utils.ErrOpt("未查询到数据"))
 	}
-
 	mods, err := model.ClassPage(pi, ps)
 	if err != nil {
 		return ctx.JSON(utils.ErrOpt("未查询到数据", err.Error()))
 	}
-	return ctx.JSON(utils.Page("分类分页数据", mods, count))
+	return ctx.JSON(utils.PageLayUi("分类分页数据", mods, count))
 }
