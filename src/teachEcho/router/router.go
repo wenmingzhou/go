@@ -19,9 +19,13 @@ func Run() {
 	app.GET("/login.html", control.LoginView)
 
 	//路由分组
-	admin := app.Group("/admin", ServerHeader)
-	admin.GET("/index.html", control.AdminIndexView)
+	//admin := app.Group("/admin", ServerHeader) //限制必须要token
+	//admin.GET("/index.html", control.AdminIndexView)
 
-	app.POST("/api/login", control.UserLogon)
+	api := app.Group("/api")
+	ApiRouter(api)
+
+	adm := app.Group("/adm", ServerHeader)
+	AdmRouter(adm)
 	app.Start(":8021")
 }
