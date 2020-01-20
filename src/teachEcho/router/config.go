@@ -1,8 +1,11 @@
 package router
 
 import (
+	"github.com/dgrijalva/jwt-go"
 	"github.com/labstack/echo"
+	"github.com/zxysilent/utils"
 	"io"
+	"teachEcho/model"
 	"text/template"
 )
 
@@ -33,6 +36,18 @@ var renderer = &TemplateRenderer{
 func ServerHeader(next echo.HandlerFunc) echo.HandlerFunc {
 	return func(ctx echo.Context) error {
 		ctx.Response().Header().Set(echo.HeaderServer, "Echo/999")
-		return next(ctx)
+		tokenString := ctx.FormValue("token")
+		claims := model.UserClaims{}
+		token, err := jwt.ParseWithClaims(tokenString, &claims, func(token *jwt.Token) (interface{}, error) {
+			return []byte("house365"), nil
+		})
+
+		if err == nil && token.Valid {
+			//验证通过
+			return next(ctx)
+		} else {
+			return ctx.JSON(utils.ErrJwt("验证失败"))
+		}
+
 	}
 }
