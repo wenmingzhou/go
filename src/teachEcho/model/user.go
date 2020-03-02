@@ -31,3 +31,17 @@ type UserClaims struct {
 	Name string `json:"name"`
 	jwt.StandardClaims
 }
+
+//返回分页的数据
+func UserPage(pi, ps int) ([]User, error) {
+	mods := make([]User, 0, ps)
+	err := DB.Select(&mods, "select * from user limit ?, ?", (pi-1)*ps, ps)
+	return mods, err
+}
+
+//返回当前条件的总数
+func UserCount() int {
+	count := 0
+	DB.Get(&count, "select count(*) as count from user")
+	return count
+}

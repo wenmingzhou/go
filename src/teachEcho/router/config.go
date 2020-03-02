@@ -1,6 +1,7 @@
 package router
 
 import (
+	"fmt"
 	"github.com/dgrijalva/jwt-go"
 	"github.com/labstack/echo"
 	"github.com/zxysilent/utils"
@@ -43,6 +44,7 @@ func ServerHeader(next echo.HandlerFunc) echo.HandlerFunc {
 		})
 
 		if err == nil && token.Valid {
+			ctx.Set("uid", claims.Id)
 			//验证通过
 			return next(ctx)
 		} else {

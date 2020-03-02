@@ -14,7 +14,7 @@ type login struct {
 	Pass string `json:"pass"`
 }
 
-func UserLogon(ctx echo.Context) error {
+func UserLogin(ctx echo.Context) error {
 	ipt := login{}
 	err := ctx.Bind(&ipt) // 把传输的数据绑定到结构体中
 	if err != nil {
@@ -43,4 +43,26 @@ func UserLogon(ctx echo.Context) error {
 
 	return ctx.JSON(utils.Succ("登录成功", ss))
 
+}
+
+func UserPage(ctx echo.Context) error {
+	//uid, _ := ctx.Get("uid").(int64)
+	ipt := pageLayUi{}
+	err := ctx.Bind(&ipt)
+
+	if err != nil {
+		return ctx.JSON(utils.ErrIpt("输入有误", err.Error()))
+	}
+
+	count := model.UserCount()
+	if count < 1 {
+		return ctx.JSON(utils.ErrOpt("未查询到数据"))
+	}
+	//fmt.Println(ipt.Page, ipt.Limit)
+	mods, err := model.UserPage(ipt.Page, ipt.Limit)
+
+	if err != nil {
+		return ctx.JSON(utils.ErrOpt("未查询到数据", err.Error()))
+	}
+	return ctx.JSON(utils.PageLayUi("用户分页数据", mods, count))
 }
