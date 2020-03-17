@@ -1,9 +1,13 @@
 package control
 
-import "github.com/labstack/echo"
+import (
+	"github.com/labstack/echo"
+)
 
 func Index(ctx echo.Context) error {
-	return ctx.String(200, "string")
+	//fmt.Println("1111")
+	//return ctx.String(200, "string")
+	return ctx.Redirect(302, "login.html")
 }
 
 type pageLayUi struct {
