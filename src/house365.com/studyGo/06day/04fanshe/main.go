@@ -1,0 +1,53 @@
+package main
+
+import (
+	"fmt"
+	"reflect"
+)
+
+type Cat struct {
+}
+
+//通过反射获取类型
+func reflectType(x interface{}) {
+	v := reflect.TypeOf(x)
+	//fmt.Printf("type:%v\n",v)
+	fmt.Printf("type name:%v type kind:%v\n", v.Name(), v.Kind())
+}
+
+//通过反射获取值
+func reflectValue(x interface{}) {
+	v := reflect.ValueOf(x)
+	k := v.Kind() //值得种类
+	switch k {
+	case reflect.Int64:
+		// v.Int()从反射中获取整型的原始值，然后通过int64()强制类型转换
+		fmt.Printf("type is int64, value is %d\n", int64(v.Int()))
+	case reflect.Float32:
+		// v.Float()从反射中获取浮点型的原始值，然后通过float32()强制类型转换
+		fmt.Printf("type is float32, value is %f\n", float32(v.Float()))
+	case reflect.Float64:
+		// v.Float()从反射中获取浮点型的原始值，然后通过float64()强制类型转换
+		fmt.Printf("type is float64, value is %f\n", float64(v.Float()))
+	}
+}
+
+//通过反射设置变量的值
+func reflectSetValue1(x interface{}) {
+	v := reflect.ValueOf(x)
+	if v.Elem().Kind() == reflect.Int64 {
+		v.Elem().SetInt(200) //修改的是副本，reflect包会引发panic
+	}
+}
+func main() {
+	var a float32 = 3.14
+	reflectType(a)
+	var b int64 = 100
+	reflectType(b)
+	var c = Cat{}
+	reflectType(c)
+	reflectValue(a)
+
+	reflectSetValue1(&b)
+	fmt.Println(b)
+}
