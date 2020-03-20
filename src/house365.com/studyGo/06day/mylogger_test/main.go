@@ -20,7 +20,7 @@ import (
 
 func main() {
 	//log :=mylogger.NewLog("debug")
-	log := mylogger.NewFileLogger("debug", "./", "zhoulin.log", 10*1024*1024)
+	log := mylogger.NewFileLogger("debug", "./", "zhoulin.log", 10*1024)
 	for {
 		id := 10010
 		name := "理想"
