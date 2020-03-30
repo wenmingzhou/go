@@ -6,42 +6,47 @@ import (
 	"time"
 )
 
-//读锁和写锁。读写互斥锁
-// 当一个goroutine获取读锁之后， 其他的goroutine如果是获取读锁会继续获得锁，如果是获取写锁就会等待；
-// 当一个goroutine获取写锁之后，其他的goroutine无论是获取读锁还是写锁都会等待
+var (
+	x      int64
+	wg     sync.WaitGroup
+	lock   sync.Mutex
+	rwlock sync.RWMutex
+)
 
-var x = 0
-var lock sync.Mutex
-var rwlock sync.RWMutex
-var wg sync.WaitGroup
+func write() {
+	// lock.Lock()   // 加互斥锁
+	rwlock.Lock() // 加写锁
+	x = x + 1
+	fmt.Println("write...", x)
+	time.Sleep(10 * time.Millisecond) // 假设读操作耗时10毫秒
+	rwlock.Unlock()                   // 解写锁
+	// lock.Unlock()                     // 解互斥锁
+	wg.Done()
+}
 
 func read() {
-	defer wg.Done()
-	lock.Lock()
-	fmt.Println(x)
-	time.Sleep(time.Millisecond)
-	lock.Unlock()
-}
-func write() {
-	defer wg.Done()
-	lock.Lock()
-	x = x + 1
-	time.Sleep(time.Millisecond * 5)
-	lock.Unlock()
+	// lock.Lock()                  // 加互斥锁
+	rwlock.RLock() // 加读锁
+	fmt.Println("read...", x)
+	time.Sleep(time.Millisecond) // 假设读操作耗时1毫秒
+	rwlock.RUnlock()             // 解读锁
+	// lock.Unlock()                // 解互斥锁
+	wg.Done()
 }
 
 func main() {
 	start := time.Now()
 	for i := 0; i < 10; i++ {
-		go write()
 		wg.Add(1)
+		go write()
 	}
 
 	for i := 0; i < 1000; i++ {
-		go read()
 		wg.Add(1)
+		go read()
 	}
-	wg.Wait()
-	fmt.Println(time.Now().Sub(start))
 
+	wg.Wait()
+	end := time.Now()
+	fmt.Println(end.Sub(start))
 }
