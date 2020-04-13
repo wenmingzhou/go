@@ -24,7 +24,8 @@ func main() {
 	defer cli.Close()
 	// put 超时控制 超过一秒就取消etcd 设置值
 	ctx, cancel := context.WithTimeout(context.Background(), time.Second)
-	_, err = cli.Put(ctx, "q1mi", "dsb")
+	_, err = cli.Put(ctx, "/logagent/collect_config", `       
+[{"path":"c:/tmp/nginx.log","topic":"web_log"},{"path":"d:/xxx/redis.log","topic":"redis_log"},{"path":"d:/xxx/mysql.log","topic":"mysql_log"}]`)
 	cancel()
 	if err != nil {
 		fmt.Printf("put to etcd failed, err:%v\n", err)
@@ -32,7 +33,7 @@ func main() {
 	}
 	// get  超时控制 超过一秒就取消etcd 获取值
 	ctx, cancel = context.WithTimeout(context.Background(), time.Second)
-	resp, err := cli.Get(ctx, "q1mi")
+	resp, err := cli.Get(ctx, "/logagent/collect_config")
 	cancel()
 	if err != nil {
 		fmt.Printf("get from etcd failed, err:%v\n", err)
