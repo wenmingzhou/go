@@ -6,6 +6,7 @@ import (
 	"house365.com/studyGo/logagent/conf"
 	"house365.com/studyGo/logagent/etcd"
 	"house365.com/studyGo/logagent/kafka"
+	"house365.com/studyGo/logagent/taillog"
 	"time"
 )
 
@@ -22,7 +23,7 @@ func main() {
 	}
 
 	//1 初始化kafak连接
-	err = kafka.Init([]string{cfg.KafkaConf.Address})
+	err = kafka.Init([]string{cfg.KafkaConf.Address}, cfg.KafkaConf.ChanMaxSize)
 	if err != nil {
 		fmt.Printf("init kafka failed,err:%v\n", err)
 		return
@@ -43,12 +44,13 @@ func main() {
 		fmt.Printf("etcd.GetConf failed,err:%v\n", err)
 		return
 	}
-	fmt.Println(logEntryConf)
 	for index, value := range logEntryConf {
 		fmt.Printf("index:%v value:%v \n", index, value)
 	}
 
-	//2.2  拍一个哨兵去监视日志收件项的变化(有变化及时通知我的logAgent实现热加载)
+	//3 收集日志发往kafka
+	//3.1 循环每一个收集项,创建TailObj
+	taillog.Init(logEntryConf)
 
-	//run()
+	//2.2  拍一个哨兵去监视日志收件项的变化(有变化及时通知我的logAgent实现热加载)
 }
