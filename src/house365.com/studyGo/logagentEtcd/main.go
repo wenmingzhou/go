@@ -44,6 +44,7 @@ func main() {
 		fmt.Printf("etcd.GetConf failed,err:%v\n", err)
 		return
 	}
+	fmt.Println(logEntryConf)
 	for index, value := range logEntryConf {
 		fmt.Printf("index:%v value:%v \n", index, value)
 	}

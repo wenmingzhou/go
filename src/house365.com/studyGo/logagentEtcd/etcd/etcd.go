@@ -41,7 +41,7 @@ func GetConf(key string) (logEntryConf []*LogEntry, err error) {
 		return
 	}
 	for _, ev := range resp.Kvs {
-		err = json.Unmarshal(ev.Value, &logEntryConf) //unmarsha1 要传指针
+		err = json.Unmarshal(ev.Value, &logEntryConf) //unmarsha1 要传指针 ev.Value是内存地址 logEntryConf就是内存地址切片
 
 		if err != nil {
 			fmt.Printf("json.Unmarshal etcd value failed, err:%v\n", err)
