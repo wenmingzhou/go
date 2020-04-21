@@ -7,6 +7,7 @@ import (
 	"house365.com/studyGo/logagent/etcd"
 	"house365.com/studyGo/logagent/kafka"
 	"house365.com/studyGo/logagent/taillog"
+	"sync"
 	"time"
 )
 
@@ -49,9 +50,14 @@ func main() {
 		fmt.Printf("index:%v value:%v \n", index, value)
 	}
 
+	//2.2  派一个哨兵去监视日志收件项的变化(有变化及时通知我的logAgent实现热加载)
+
 	//3 收集日志发往kafka
 	//3.1 循环每一个收集项,创建TailObj
+	var wg sync.WaitGroup
 	taillog.Init(logEntryConf)
-
-	//2.2  拍一个哨兵去监视日志收件项的变化(有变化及时通知我的logAgent实现热加载)
+	NewConfChan := taillog.NewConfChan() //从taillog包中获取对外暴露的通道
+	wg.Add(1)
+	go etcd.WatchConf(cfg.EtcdConf.Key, NewConfChan) //哨兵发现最新的配置信息会配置上面的通道
+	wg.Wait()
 }

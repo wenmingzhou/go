@@ -53,5 +53,31 @@ func GetConf(key string) (logEntryConf []*LogEntry, err error) {
 	return
 }
 
+// etcd watch
+func WatchConf(key string, newConfCh chan []*LogEntry) {
+	rch := cli.Watch(context.Background(), key) // <-chan WatchResponse
+	//从通道尝试取值（监视的信息）
+	for wresp := range rch {
+		for _, ev := range wresp.Events {
+			fmt.Printf("Type: %s Key:%s Value:%s\n", ev.Type, ev.Kv.Key, ev.Kv.Value)
+			//通知别人 taillog_
+			//1 先判断操作的类型
+			var newConf []*LogEntry
+			//如果是删除操作，手动传递一个空的配置项
+			if ev.Type != clientv3.EventTypeDelete {
+				err := json.Unmarshal(ev.Kv.Value, &newConf)
+				if err != nil {
+					fmt.Printf("json.Unmarshal etcd value failed, err:%v\n", err)
+					continue
+				}
+			}
+
+			fmt.Printf("get new conf:%v\n", newConf)
+			newConfCh <- newConf
+
+		}
+	}
+}
+
 // c:/tmp/nginx.log   web_log
 // d:/xxx/redis.log   redis_log
