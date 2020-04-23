@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>hello</title>
+</head>
+<body>
+<p>U</p>
+<p>hello {{ .u.Name }}</p>
+<p>年龄 {{ .u.Age }}</p>
+<p>性别 {{ .u.Gender }}</p>
+
+<p>M</p>
+<p>hello {{ .m.name }}</p>
+<p>年龄 {{ .m.age }}</p>
+<p>性别 {{ .m.gender }}</p>
+
+
+<p>hobbyList</p>
+{{ range $idx , $val :=.hobby}}
+    <p>{{$idx}}-{{$val}}</p>
+{{end}}
+
+<--.with 造临时作用域 var . =.m1-->
+{{with .m1}}
+    <p>{{.name}}</p>
+{{end}}
+
+{{index .hobby 2}}
+</body>
+</html>

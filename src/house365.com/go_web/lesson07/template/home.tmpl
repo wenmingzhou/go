@@ -1,0 +1,7 @@
+{{/*继承根模板*/}}
+{{template "base.tmpl" . }}
+{{/*重新定义快模板*/}}
+{{define "content"}}
+    <h1>这是home页面</h1>
+    <p>hello{{ . }}</p>
+{{end}}
